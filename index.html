@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/773b01eed0.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <title>درمانیتو</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logoBox">
+            <a href="index.html" class="navbar__logo"></a>
+            <p id="lText1">درمانیتو</p>
+            <p id="lText2">همراه شما در درمان</p>
+        </div>
+        <ul class="navbar__list" id="navResponsive">
+            <li class="navbar__item"><a href="index.html">صفحه اصلی</a></li>
+            <li class="navbar__item"><a href="#">درباره ما</a></li>
+            <li class="navbar__item"><a href="contact.html">تماس با ما</a></li>
+            <li class="navbar__item"><a href="pharmacy.html">عضویت داروخانه ها</a></li>
+            <li class="navbar__item" id="newLi0" ><a href="FAQ.html">سوالات متداول</a></li>
+            <li class="navbar__item" id="newLi1"><a href="#">قوانین و شرایط</a></li>
+            <li class="navbar__item" id="btnBox"><button id="btn0">دانلود درمانیتو</button></li>
+        </ul>
+        <button class="navbar__burger" id="burger" onclick="nav()"></button>
+    </nav>
+    <div class="header">
+        <div class="header__leftBox">
+            <a class="header__image"></a>
+        </div>
+        <div class="header__rightBox">
+            <p class="header__firstTxt">اپلیکیشن درمانیتو</p>
+            <p class="header__secondTxt">درمانیتو سامانه هوشمند درمان و سلامت</p>
+            <button id="btn1">دانلود درمانیتو</button>
+            <button id="btn2" onclick="function0()">عضویت داروخانه ها</button>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about__leftBox">
+            <div class="about__leftMainBox">
+                <div class="vl" id="vl0"></div>
+                <p class="about__firstTxt" id="aboutBox00"> درباره درمانیتو</p>
+                <p class="about__secondTxt">درمانیتو یک سامانه است که امکان سفارش دارو ، محصولات آرایشی بهداشتی ، نوبت گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده است</p>
+                <div class="about__itemContainer">
+                    <div class="about__itemBox about__itemBox--active">
+                        <div class="about__itemBoxInner about__itemBoxInner--active" id="badge0"></div>
+                        <p class="about__innerTxt">قابل اطمینان</p>
+                    </div>
+                    <div class="about__itemBox">
+                        <div class="about__itemBoxInner about__itemBoxInner--active" id="badge1"></div>
+                        <p class="about__innerTxt">به صرفه</p>
+                    </div>
+                    <div class="about__itemBox" id="lastOne0">
+                        <div class="about__itemBoxInner about__itemBoxInner--active" id="badge2"></div>
+                        <p class="about__innerTxt">راحت</p>
+                    </div>
+                    <div class="about__itemBox" id="lastOne">
+                        <div class="about__itemBoxInner" id="badge3"></div>
+                        <p class="about__innerTxt">جستجوی سریع</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__rightBox">
+            <div class="about__imageBox">
+                <a class="about__image"></a>
+            </div>
+        </div>
+    </div>
+    <div class="property">
+        <div class="property__rightBox">
+            <div class="property__rightMainBox">
+                <div class="vl vl1"></div>
+                <p class="about__firstTxt" id="newTxt"> امکانات درمانیتو</p>
+                <div class="property__containerBox">
+                    <div class="property__smallBox property__smallBox--style">
+                        <a class="property__smallBoxImgFirst property__same"></a>
+                        <p class="property__smallBoxTxt" style="color: #528CFF">داروخانه</p>
+                    </div>
+                    <div class="property__smallBox property__smallBox--style">
+                        <a class="property__smallBoxImgSecond property__same"></a>
+                        <p class="property__smallBoxTxt" style="color: #939393">فروشگاه</p>
+                    </div>
+                    <div class="property__smallBox property__smallBox--style property__smallBox--active">
+                        <a class="property__smallBoxImgThird property__same"></a>
+                        <p class="property__smallBoxTxt" style="color: #939393">ویزیت آنلاین</p>
+                    </div>
+                    <div class="property__smallBox property__smallBox--style property__smallBox--active" id="lBoxLast">
+                        <a class="property__smallBoxImgFourth property__same"></a>
+                        <p class="property__smallBoxTxt" style="color: #939393">نوبت دهی آنلاین</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="property__leftBox">
+            <p class="property__leftTxt0">داروخانه آنلاین</p>
+            <p class="property__leftTxt1">در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید</p>
+            <div class="property__leftMainBox">
+                <div class="property__leftIconBox">
+                    <a class="property__icon"></a>
+                </div>
+                <p class="property__stepTxt">قدم اول</p>
+                <p class="property__detailTxt">وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید</p>
+            </div>
+            <div class="property__leftMainBox">
+                <div class="property__leftIconBox property__leftIconBox--active">
+                    <a class="property__icon"></a>
+                </div>
+                <p class="property__stepTxt">قدم دوم</p>
+                <p class="property__detailTxt">بعد از ارسال عکس نسخه باید آدرس محل خودتون رو وارد کنید</p>
+            </div>
+            <div class="property__leftMainBox">
+                <div class="property__leftIconBox" style="background-color: #2AE791">
+                    <a class="property__checkIcon"></a>
+                </div>
+                <p class="property__stepTxt">قدم سوم</p>
+                <p class="property__detailTxt">اگر نتیجه جستجوی نسخه موفقیت آمیز باشد باید منتظر تحویل سفارش باشید</p>
+            </div>
+        </div>
+    </div>
+    <div class="blueBox">
+        <div class="blueBox__left">
+            <a class="blueBox__image"></a>
+        </div>
+        <div class="blueBox__right">
+            <div class="blueBox__rightMainBox">
+                <p class="blueBox__text">دانلود اپلیکیشن درمانیتو</p>
+                <p class="blueBox__secondText">برای دریافت لینک دانلود شماره موبایل خود را وارد کنید</p>
+                <input class="blueBox__input firstOne" type="number" placeholder="َشماره همراه خود را وارد کنید">
+                <button class="blueBox__button btn">بفرست</button>
+                <br/>
+                <button class="btn0 gPlay" id="googlePlay"></button>
+                <button class="btn0" id="bazar"></button>
+                <button class="btn0 Sib" id="sib"></button>
+            </div>
+        </div>
+    </div>
+    <div class="drugStore">
+        <div class="drugStore__mainBox">
+            <div class="drugStore__mainBoxLeft">
+                <a class="drugStore__image"></a>
+            </div>
+            <div class="drugStore__mainBoxRight">
+                <div class="vl vl2"></div>
+                <p class="drugStore__text about__firstTxt drugStore__text--active" style="margin-top: 0">عضویت داروخانه یا مراکز درمانی</p>
+                <p class="drugStore__secondText property__leftTxt1 drugStore__secondText--active" style="width: 90%">اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب و کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست</p>
+                <input class="blueBox__input" id="number" type="number" placeholder="َشماره همراه خود را وارد کنید" style="background-color: #F3F3F3">
+                <button class="btn" id="drugBut">ثبت نام سریع</button>
+            </div>
+        </div>
+    </div>
+    <div class="support">
+        <div class="support__mainBox">
+            <p class="support__firstTxt">پشتیبانی درمانیتو</p>
+            <p class="support__secondTxt">پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+            <div class="support__innerBox"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__mainBox" id="lastResponsive">
+            <div class="footer__secondBox">
+                <a href="index.html" class="footer__last navbar__logo" style="float:right;margin-left: 5px;margin-top: 10px"></a>
+                <div class="footer__logoTxt">
+                    <p id="lastText1" style="margin-right: 5px">درمانیتو</p>
+                    <p id="lastText2">همراه شما در درمان</p>
+                </div>
+                <br/><br/><br class="footer__br"/>
+                <p class="footer__infoTxt">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p class="footer__mainTxtType">تمامی حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
+                <i class="fab fa-linkedin-in icon" id="linkedIn"></i>
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-instagram icon"></i>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove1">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <div class="footer__rightBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">خدمات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li">داروخانه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">فروشگاه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">ویزیت آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">پرونده پزشکی</li>
+                    </ul>
+                </div>
+                <div class="footer__leftBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">صفحات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="contact.html" class="link">تماس با ما</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">درباره ما</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="FAQ.html" class="link">سوالات متداول</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">قوانین و شرایط</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove0">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <p class="footer__infoTxt removable">دانلود درمانیتو</p>
+                <button class="footer__button btn0" id="bazar0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+                <button class="footer__button btn0" id="sib0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,4650 @@
+
+/* main page styles */
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Vazir.woff2') format('woff2'),
+    url('fonts/Vazir.woff') format('woff'),
+    url('fonts/Vazir.ttf') format('truetype');
+}
+body{
+    font-family: 'Vazir';
+    direction: rtl;
+    margin: 0;
+}
+.navbar{
+    width: 95%;
+    height: 20vh;
+    margin: 0 15px;
+}
+.navbar__list{
+    margin-right: 7%;
+}
+.navbar ul{
+    width: 65%;
+    margin-right: 30%;
+    position: absolute;
+    float: right;
+    list-style-type: none;
+}
+.navbar ul li{
+    float: right;
+    margin: 10px 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #5C5C5C;
+    font-weight: bold;
+}
+.navbar ul li a:hover{
+    color: #1894ff;
+}
+#newLi0,#newLi1{
+    display: none;
+}
+.navbar__logoBox{
+    float: right;
+    margin: 16px 12% 0 0;
+    width: 12%;
+}
+.navbar__logo{
+    display: block;
+    text-indent: -9999px;
+    width: 35px;
+    height: 45px;
+    background: url("images/logo.svg");
+    background-size: 35px 45px;
+    float: right;
+    margin-left: 10px;
+}
+#logoText{
+    margin: 5px -10px 10px 15%;
+}
+#lText1,#lastText1{
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#lText2,#lastText2{
+    margin: 0 5px;
+    font-size: 12px;
+}
+#lText1,#lastText1{
+    margin-top: 0 !important;
+}
+a.navbar__logo{
+    margin-top: 5px;
+}
+a.footer__last{
+    margin-top: 17px !important;
+}
+#btnBox{
+    margin: 5px 15% 10px 10px;
+}
+#btn0{
+    font-family: 'Vazir';
+    font-weight: bold;
+    background-color: #e6f3ff;
+    color: #1894ff;
+    border: 1px solid #e6f3ff;
+    border-radius: 6px;
+    width: 120px;
+    height: 40px;
+}
+#btn0:hover{
+    cursor: pointer;
+    background-color: #1894ff;
+    color: #DCE7FF;
+    border: 1px solid #1894ff;
+}
+.header{
+    width: 100%;
+    height: 75vh;
+}
+.header__leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.header__rightBox{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.header__image{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background: url("images/Doctor-with-background.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: 17%;
+}
+.header__firstTxt{
+    margin: 20% 25% 10px 0;
+    color: #1894ff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.header__secondTxt{
+    margin: 10px 25% 10px 0;
+    font-size: 14px;
+}
+#btn1{
+    font-family: 'Vazir';
+    font-weight: bold;
+    background-color: #1894ff;
+    color: #DCE7FF;
+    border: 1px solid #1894ff;
+    border-radius: 6px;
+    width: 120px;
+    height: 40px;
+    margin: 10px 25% 10px 0;
+}
+#btn1:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #1894ff;
+    border: 1px solid #1894ff;
+}
+#btn2{
+    font-family: 'Vazir';
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #1894ff;
+    border: 1px solid #1894ff;
+    border-radius: 6px;
+    width: 120px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+}
+#btn2:hover{
+    cursor: pointer;
+    background-color: #1894ff;
+    color: #DCE7FF;
+    border: 1px solid #1894ff;
+}
+.about{
+    width: 100%;
+    height: 75vh;
+}
+.about__leftBox{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.about__rightBox{
+    width: 40%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+}
+.about__leftMainBox{
+    margin: 19% 7% 20px 0;
+}
+.vl{
+    border-left: 4px solid #00de9a;
+    border-radius: 12px;
+    height: 25px;
+    position: absolute;
+}
+.about__firstTxt{
+    margin-right: 15px;
+    color: #2361b5;
+    font-weight: bold;
+}
+.about__secondTxt{
+    width: 72%;
+    font-size: 15px;
+}
+.about__itemBox{
+    margin: 7% 0 10px 8.5%;
+    width: 88px;
+    height: 127px;
+    float: right;
+}
+.about__itemBox--active{
+    margin-right: 5px !important;
+}
+.about__itemBoxInner{
+    width: 80px;
+    height: 80px;
+    background: #F7F7FF;
+    box-shadow: 0 0 30px 0 rgba(24,148,255,0.16);
+    border-radius: 22px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+.about__itemBoxInner:hover,.property__smallBox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #CCE3FF, 0 4px 8px #CCE3FF;
+}
+#badge0{
+    width: 80px;
+    height: 80px;
+    background: url("images/verify.svg");
+    display: block;
+    text-indent: -9999px;
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#badge1{
+    width: 80px;
+    height: 80px;
+    background: url("images/time.svg");
+    display: block;
+    text-indent: -9999px;
+    background-size: 37px 37px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#badge2{
+    width: 80px;
+    height: 80px;
+    background: url("images/support.svg");
+    display: block;
+    text-indent: -9999px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: 57% 60%;
+}
+#badge3{
+    width: 80px;
+    height: 80px;
+    background: url("images/search.svg");
+    display: block;
+    text-indent: -9999px;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.about__innerTxt{
+    font-size: 13px;
+    width: 80px;
+    text-align: center;
+}
+.about__imageBox{
+    width: 356.67px;
+    height: 356.67px;
+    margin-right: 29%;
+}
+.about__image{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background: url("images/preview-img.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.property{
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 10%;
+}
+.property__rightBox{
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+.property__leftBox{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.property__rightMainBox{
+    margin: 30% 29% 25px 10px;
+    width: 60%;
+    height: 100%;
+}
+.property__smallBox{
+    width: 110px;
+    height: 110px;
+    float: right;
+    margin:13% 0 0 13%;
+    background: white;
+    box-shadow: 0 0 30px 0 rgba(24,148,255,0.16);
+    border-radius: 22px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+.property__smallBoxImgFirst{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 65%;
+    background: url("images/pharmacy.svg");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.property__smallBoxImgSecond{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 65%;
+    background: url("images/shop.svg");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.property__smallBoxImgThird{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 65%;
+    background: url("images/doctor-toys.svg");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.property__smallBoxImgFourth{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 65%;
+    background: url("images/calender.svg");
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+.property__smallBoxTxt{
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.property__leftTxt0{
+    margin-top: 30%;
+    font-weight: bold;
+}
+.property__leftTxt1{
+    width: 60%;
+    font-size: 14px;
+    color: #939393;
+    margin-bottom: 4%;
+}
+.property__leftMainBox{
+    width: 60%;
+    height: 9%;
+    margin-bottom: 2%;
+}
+.property__leftIconBox{
+    width: 35px;
+    height: 35px;
+    float: right;
+    border-radius: 50%;
+    background-color: #e6f3ff;
+}
+.property__leftIconBox--active{
+    position: relative;
+}
+.property__leftIconBox--active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.7px;
+    height: 40px;
+    right: 48%;
+    top: 80%;
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.3;
+    z-index: -1;
+}
+.property__leftIconBox--active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.7px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.3;
+    right: 48%;
+    bottom: 85%;
+    z-index: -1;
+}
+.property__icon{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background: url("images/arrow.svg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.property__checkIcon{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background: url("images/check.svg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.property__stepTxt{
+    margin:3px 3% 0 0;
+    font-size: 13px;
+    font-weight: bold;
+    float: right;
+}
+.property__detailTxt{
+    font-size: 12px;
+    color: #939393;
+    margin: 27px 7% 0 0;
+    position: absolute;
+}
+.blueBox{
+    width: 100%;
+    height: 75vh;
+    background-color: #1894ff;
+}
+.blueBox__left{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.blueBox__right{
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.blueBox__image{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 101%;
+    background: url("images/app-prev.svg");
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.blueBox__rightMainBox{
+    width: 70%;
+    height: 65%;
+    margin: 15% 17% 0 0;
+}
+.blueBox__text{
+    color: #F7F7FF;
+    font-weight: bold;
+    font-size: 18px;
+}
+.blueBox__secondText{
+    font-weight: bold;
+    font-size: 14px;
+    color: #F7F7FF;
+}
+.blueBox__input{
+    font-family: 'Vazir';
+    font-size: 16px;
+    padding-right: 20px;
+    color: #5C5C5C;
+    width: 80%;
+    height: 15%;
+    border: 1px solid #F7F7FF;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.btn{
+    font-family: 'Vazir';
+    font-weight: bold;
+    background-color: #1894ff;
+    color: #DCE7FF;
+    border: 1px solid #1894ff;
+    border-radius: 6px;
+    width: 15%;
+    height: 12%;
+    position: relative;
+    margin-right: -18%;
+}
+.btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #1894ff;
+    font-weight: bold;
+    color: #1894ff;
+    cursor: pointer;
+}
+.btn0{
+    width: 25%;
+    height: 14.3%;
+    margin: 7% 0 0 1%;
+    border: 1px solid #1894ff;
+    cursor: pointer;
+}
+#sib{
+    background: url("images/sibapp.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#sib0{
+    background: url("images/sib-app-black.svg");
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#bazar{
+    background: url("images/bazar.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#bazar0{
+    background: url("images/black-bazar.svg");
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#googlePlay{
+    background: url("images/android.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.drugStore{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+}
+.drugStore__mainBox{
+    width: 80%;
+    height: 65%;
+    border: 1px solid #DCE7FF;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(24,148,255,0.16);
+    transition: .4s;
+    cursor: pointer;
+}
+.drugStore__mainBox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #CCE3FF, 0 4px 8px #CCE3FF;
+}
+.drugStore__mainBoxLeft{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+.drugStore__mainBoxRight{
+    width: 50%;
+    height: 80%;
+    padding: 6% 5% 0 0;
+    float: right;
+}
+.drugStore__image{
+    display: block;
+    text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    background: url("images/subscribe-img.svg");
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: 75% 100%;
+}
+#drugBut{
+    margin-right: -20%;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.support{
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1894ff;
+    margin-bottom: 2%;
+}
+.support__mainBox{
+    width: 81%;
+    height: 10vh;
+}
+.support__firstTxt{
+    color: #F7F7FF;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}
+.support__secondTxt{
+    color: #F7F7FF;
+    font-size: 13px;
+    float: right;
+    margin:22px 35px 0 0;
+    font-family: 'Vazir';
+    font-weight: bold;
+}
+.support__innerBox{
+    width: 230px;
+    height: 45px;
+    margin-top: 7px;
+    float: left;
+    background-image: url("images/support-phone-number.svg");
+    background-size: 100% 100%;
+}
+.footer{
+    width: 100%;
+    height: 55vh;
+    margin-bottom: 2%;
+}
+.footer__mainBox{
+    width: 33%;
+    height: 100%;
+    float: right;
+}
+.footer__secondBox{
+    width: 70%;
+    height: 75%;
+    margin:15% 28% 0 0;
+}
+.footer__logoTxt{
+    float: right;
+    margin: 10px 0;
+}
+.footer__infoTxt{
+    font-weight: bold;
+    margin-top: 0;
+}
+.footer__mainTxtType{
+    font-size: 14px;
+    color: #939393;
+}
+.icon {
+    color: #939393;
+    font-size: 25px;
+    margin: 15px 0 0 20px;
+}
+.icon:hover{
+    color: #1894ff;
+    cursor: pointer;
+}
+.footer__rightBox{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.footer__leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.footer__mainTxtType--li{
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+.footer__mainTxtType--li:hover{
+    color: #1894ff;
+    font-weight: bold;
+    cursor: pointer;
+    border-right: 2px solid #00de9a;
+    border-radius: 2px;
+    padding-right: 10px;
+}
+.link{
+    text-decoration: none;
+    color: #939393;
+}
+.link:hover{
+    color: #1894ff;
+}
+
+.about__itemContainer{
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* pharmacy page styles */
+
+
+.p-header{
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 10%;
+}
+.p-header__leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.p-header__rightBox{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.p-header__firstTxt{
+    margin: 13% 25% 5% 0;
+    color: #1894ff;
+    font-size: 30px;
+    font-weight: bold;
+    width: 65%;
+}
+.p-header__secondTxt{
+    margin: 5% 25% 10px 0;
+    font-size: 16px;
+    width: 67%;
+    line-height: 36px;
+}
+.p-header__input{
+    margin: 2% 25% 0 0;
+    width: 70%;
+    height: 12.5%;
+    border-radius: 9px;
+}
+.p-header__button{
+    height: 9%;
+    border-radius: 9px;
+}
+.p-header__mainBox{
+    width: 438px;
+    height: 125px;
+    margin: 6% 6% 4% 0;
+    border-radius: 22px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px 0 rgba(24,148,255,0.16);
+}
+.p-header__image{
+    width: 20%;
+    height: 55%;
+    background-image: url("images/person-icon.svg");
+    background-size: 100% 100%;
+    float: right;
+    margin: 6.3% 3%;
+}
+.p-header__thirdTxt{
+    margin-top: 7%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+.p-header__span{
+    background-color: #1894ff;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin: 2% 0 0 3%;
+    border-radius: 8px;
+    float: left;
+}
+.p-header__location{
+    width: 12px;
+    height: 17px;
+    float: right;
+    margin-left: 6%;
+    background-image: url("images/map-marker.svg");
+    background-size: 100% 100%;
+}
+.p-header__textBox{
+    width: 55%;
+    height: 25%;
+    float: right;
+}
+.p-header__textBoxTxt{
+    float: right;
+    font-size: 12px;
+    margin-top: 0;
+}
+.p-header__mainBox--style{
+    width: 306px;
+    height: 87px;
+}
+.p-header__thirdTxt--active{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.p-header__textBoxTxt--active{
+    font-size: 8px;
+    margin-top: 5px;
+}
+.p-header__span--active{
+    font-size: 9px;
+    border-radius: 5px;
+}
+.p-blueBand{
+    width: 100%;
+    height: 24vh;
+    background-color: #1894ff;
+    margin-bottom: 9%;
+    display: flex;
+    justify-content: center;
+}
+.p-blueBand__mainBox{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.p-blueBand__innerBox{
+    color: white;
+    float: right;
+}
+.p-blueBand__firstTxt{
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+.p-blueBand__secondTxt{
+    font-size: 36px;
+    margin-top: 15px;
+}
+.p-servicesTop__firstTxt,.f-main__firstTxt{
+    margin-right: 2%;
+    color: #2361b5;
+    font-size: 20px;
+    font-weight: bold;
+}
+.p-servicesTop__secondTxt{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.p-servicesBottom{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 7%;
+}
+.p-servicesBottom__rightBox{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.p-servicesBottom__leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.p-servicesBottom__mainBox{
+    width: 60%;
+    height: 95%;
+    margin: 3% 25% 0 0;
+    padding: 0 20px;
+    border-radius: 35px;
+    box-shadow: 0 0 50px 0 rgba(24,148,255,0.1);
+}
+.p-servicesBottom__imgBox{
+    width: 100%;
+    height: 55%;
+}
+.p-servicesBottom__imgRight{
+    width: 100%;
+    height: 100%;
+    background: url("images/drug.svg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.p-servicesBottom__imgLeft{
+    width: 100%;
+    height: 100%;
+    background: url("images/store-subcribe-page.svg");
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.p-servicesBottom__firstTxt{
+    color: #2361b5;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.p-servicesBottom__secondTxt{
+    font-size: 14px;
+}
+.p-servicesBottom__button{
+    font-family: Vazir;
+    color: white;
+    width: 150px;
+    height: 42px;
+    margin: 5% 30% 0 0;
+    background-color: #1894ff;
+    border-radius: 9px;
+    border: 1px solid #1894ff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* FAQ page styles */
+
+
+.f-blueLine{
+    width: 100%;
+    height: 19.3vh;
+    background-color: #1894ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-blueLine__text{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.f-main{
+    width: 100%;
+    height: 105vh;
+    margin-bottom: 12%;
+
+}
+.f-main__txtBox{
+    margin: 7% 12% 0 0;
+}
+.property__smallBox--new{
+    margin: 7% 10px 10px 10%;
+    width: 160px;
+    height: 160px;
+    background-color: #ffffff;
+    position: relative;
+}
+.f-main__innerBox{
+    display: flex;
+    flex-flow: row wrap;
+    overflow: scroll;
+    margin-right: 12%;
+}
+.f-main__plusIcon{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-left: 3%;
+    background-image: url("images/plus.svg");
+    background-size: 100% 100%;
+}
+.f-main__minusIcon{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-left: 3%;
+    background-image: url("images/minus.svg");
+    background-size: 100% 100%;
+}
+.f-main__questionBox{
+    margin: 5% 11% 0 0;
+}
+.f-main__questionText{
+    font-size: 16px;
+    font-weight: bold;
+    color: #2361b5;
+}
+.f-main__line{
+    width: 84%;
+    margin: 2% 7% 2% 0;
+    opacity: 10%;
+}
+.f-main__questionTextSecond{
+    margin-right: 10%;
+    font-size: 14px;
+}
+.f-main__span{
+    font-size: 12px;
+    background-color: lightgray;
+    padding: 2px 11px;
+    border-radius: 12px;
+    margin: -7% 30%;
+    position: absolute;
+}
+
+/* contact us styles */
+
+
+.c-main{
+    width: 100%;
+    height: 105vh;
+    margin-bottom: 3%;
+}
+.c-main__rightBox{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.c-main__leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.c-main__form{
+    margin: 15% 25% 0 0;
+}
+.c-main__formTxt{
+    font-size: 12px;
+    margin: 5% 0 2% 0;
+}
+.c-main__formInput{
+    font-family: Vazir;
+    width: 75%;
+    height: 3vh;
+    border-radius: 7px;
+    border: 2px solid #939393;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 75%;
+}
+.c-main__formInput:focus{
+    outline: none !important;
+    border: 2px solid #1894ff !important;
+}
+.c-main__formButton{
+    font-family: Vazir;
+    font-size: 16px;
+    width: 80%;
+    height: 7vh;
+    border-radius: 7px;
+    border: 2px solid #1894ff;
+    color: #1894ff;
+    background-color: white;
+    margin-top: 5%;
+}
+.c-main__formButton:hover{
+    color: white;
+    background-color: #1894ff;
+    cursor: pointer;
+}
+.c-main__image{
+    margin: 15% 0 0 0;
+    width: 80%;
+    height: 72.5%;
+    background-image: url("images/Map.svg");
+    position: relative;
+    background-attachment: fixed;
+    border-radius: 15px;
+}
+.c-main__infoBox{
+    width: 33%;
+    height: 27%;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    margin: -15% 3.5% 0 0;
+    z-index: 1;
+}
+.c-main__infoRightBox{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.c-main__infoLeftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.c-main__txtBox{
+    width: 55%;
+}
+.c-main__firstTxt{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 14px 25px 0 0;
+}
+.c-main__secondTxt{
+    font-size: 14px;
+    margin: 5px 25px 0 0;
+    font-weight: bold;
+    color: #1894ff;
+}
+.c-main__thirdTxt{
+    font-size: 13px;
+    width: 75%;
+    margin-right: 25px;
+    line-height: 27px;
+}
+.property__smallBoxImgSecond,.property__smallBoxImgThird,.property__smallBoxImgFourth{
+    filter: grayscale(95%) blur(0.5px);
+    opacity: 50%;
+}
+
+
+/* responsive main page */
+
+::placeholder{
+    color: #939393;
+}
+.navbar__burger{
+    background-image: url("images/bars.svg");
+    background-color: white;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+#number{
+    height: 20%;
+    border-radius: 10px;
+}
+@media screen and (max-width: 2800px) and (min-width: 1441px){
+    a.navbar__logo{
+        width: 75px;
+        height: 75px;
+        background-size: 100% 100%;
+        margin-top: 0 !important;
+    }
+    p#lText1,p#lastText1{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    p#lText2,p#lastText2{
+        font-size: 18px;
+        width: auto;
+        white-space: nowrap;
+    }
+    li.navbar__item{
+        font-size: 24px;
+    }
+    button#btn0{
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    p.header__firstTxt{
+        font-size: 34px;
+    }
+    p.header__secondTxt{
+        font-size: 24px;
+    }
+    button#btn1,button#btn2{
+        font-size: 18px;
+        width: 200px;
+        height: 60px;
+        border: 2px solid #1894ff;
+        border-radius: 10px;
+    }
+    div.about__imageBox{
+        width: 60%;
+        height: 80%;
+    }
+    div#vl0{
+        margin-top: 5px;
+        height: 35px;
+        width: 1px;
+    }
+    p.about__firstTxt{
+        font-size: 30px;
+        margin-right: 25px;
+    }
+    p.about__secondTxt{
+        font-size: 25px;
+    }
+    div.about__leftMainBox{
+        margin-top: 15%;
+    }
+    div.about__itemBox{
+        width: auto;
+        height: auto;
+        margin-left: 7.5%;
+    }
+    div.about__itemBox--active{
+        margin-right: 20px !important;
+    }
+    div.about__itemBoxInner{
+        width: 150px !important;
+        height: 150px !important;
+        background-size: 65px 65px !important;
+        border-radius: 35px;
+    }
+    p.about__innerTxt{
+        font-size: 20px;
+        width: auto;
+    }
+    div.vl1{
+        margin-top: 5px;
+        height: 35px;
+        width: 1px;
+    }
+    div.property__smallBox{
+        width: 225px;
+        height: 225px;
+        margin: 12% 0 0 10%;
+        border-radius: 45px;
+    }
+    p.property__smallBoxTxt{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    p.property__leftTxt0{
+        font-size: 30px;
+    }
+    p.property__leftTxt1{
+        width: 70%;
+        font-size: 25px;
+    }
+    div.property__leftIconBox{
+        width: 65px;
+        height: 65px;
+    }
+    p.property__stepTxt,p.blueBox__secondText{
+        font-size: 22px;
+    }
+    p.property__detailTxt{
+        font-size: 21px !important;
+        margin: 50px 8% 0 0 !important;
+    }
+    p.blueBox__text{
+        font-size: 30px;
+        margin-bottom: 15px !important;
+    }
+    input.blueBox__input{
+        font-size: 23px;
+        border-radius: 18px;
+    }
+    button.blueBox__button{
+        font-size: 22px;
+        border-radius: 17px;
+    }
+    button.btn0{
+        width: 26%;
+        height: 23%;
+        margin: 4% 0 0 3%;
+    }
+    div.blueBox__rightMainBox{
+        margin-top: 12% !important;
+    }
+    div.drugStore{
+        margin: 3% 0;
+    }
+    div.drugStore__mainBox{
+        width: 75%;
+        height: 80%;
+    }
+    div.vl2{
+        height: 35px;
+        margin-top: 5px;
+    }
+    p.drugStore__secondText{
+        width: 85%;
+    }
+    input#number{
+        height: 15%;
+    }
+    button#drugBut{
+        margin-right: -17%;
+        font-size: 18px;
+        padding: 9px 12px;
+        border-radius: 10px;
+    }
+    p.support__firstTxt{
+        font-size: 30px;
+    }
+    p.support__secondTxt{
+        font-size: 22px;
+        margin: 40px 120px 0 0;
+    }
+    div.support__innerBox{
+        width: 300px;
+        height: 100px;
+    }
+    p.footer__infoTxt{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    p.footer__infoTxt--lastTwo{
+        margin-top: 0;
+    }
+    p.footer__mainTxtType{
+        font-size: 22px;
+    }
+    i.icon{
+        font-size: 45px;
+        margin-left: 45px;
+    }
+    li.footer__mainTxtType--li{
+        font-size: 22px;
+    }
+    div#badge2{
+        background-position: 50% 57%;
+    }
+    div#badge1{
+        background-position: 52% 53%;
+    }
+    div.property__leftMainBox{
+        margin-bottom: 1%;
+    }
+    .property__leftIconBox--active::after{
+        right: 50%;
+        top: 100%;
+        height: 36px;
+    }
+    .property__leftIconBox--active::before{
+        right: 50%;
+        bottom: 102%;
+        height: 37px;
+    }
+    footer.footer{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 2350px) and (min-width: 1441px){
+    div.property__smallBox{
+        width: 185px;
+        height: 185px;
+    }
+    p.property__leftTxt0{
+        margin-bottom: 0;
+    }
+    p.property__leftTxt1{
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+    div.property__leftMainBox{
+        margin-bottom: 1%;
+    }
+    p.property__detailTxt{
+        margin-top: 30px !important;
+        margin-right: 9% !important;
+    }
+}
+
+@media screen and (max-width: 2200px) and (min-width: 1441px){
+    div.about__imageBox{
+        width: 75%;
+        margin-right: 25%;
+    }
+    div.about__leftMainBox{
+        margin: 17% 10% 20px 10px;
+    }
+    a.drugStore__image{
+        background-size: 80% 70%;
+    }
+    div.drugStore{
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1441px){
+    div.about__leftMainBox{
+        margin-top: 22%;
+    }
+    div.about__itemBox{
+        margin-left: 6%;
+    }
+    div.property__smallBox{
+        width: 160px;
+        height: 160px;
+        border-radius: 32px;
+    }
+    p.property__smallBoxTxt{
+        font-size: 18px;
+    }
+    p.about__firstTxt{
+        margin-bottom: 20px;
+    }
+    p.property__leftTxt0{
+        font-size: 25px;
+    }
+    p.property__leftTxt1{
+        font-size: 22px;
+    }
+    div.property__leftIconBox{
+        width: 55px;
+        height: 55px;
+    }
+    div.property__leftMainBox{
+        margin-bottom: 0;
+    }
+    p.property__detailTxt{
+        margin-right: 9% !important;
+    }
+    a.blueBox__image{
+        background-size: 100% 85%;
+    }
+    div.property{
+        margin-bottom: 5%;
+    }
+    button#drugBut{
+        font-size: 15px;
+        border-radius: 12px;
+        margin-right: -18%;
+    }
+    div.drugStore{
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 1700px) and (min-width: 1441px){
+    div.about__itemBox{
+        margin-top: 5%;
+        width: 130px;
+    }
+    div.property__smallBox{
+        width: 140px;
+        height: 140px;
+    }
+    p.property__smallBoxTxt{
+        font-size: 16px;
+    }
+    p.property__leftTxt0{
+        margin-top: 28%;
+        font-size: 22px;
+    }
+    p.property__leftTxt1,p.property__stepTxt{
+        font-size: 20px;
+    }
+    p.property__detailTxt{
+        font-size: 18px;
+        margin-right: 10% !important;
+    }
+    a.blueBox__image{
+        background-size: 100% 75%;
+    }
+    div.property{
+        margin-bottom: 0;
+        height: 85vh;
+    }
+    li#btnBox{
+        margin-right: 5%;
+    }
+    button#drugBut{
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    footer.footer{
+        margin-bottom: 0;
+    }
+    div.about__imageBox{
+        height: 85%;
+    }
+    p.about__secondTxt{
+        font-size: 23px;
+    }
+    button.btn0{
+        width: 27%;
+    }
+    div.blueBox{
+        height: 70vh;
+    }
+    button.blueBox__button{
+        border-radius: 12px;
+    }
+    p.about__innerTxt{
+        width: 145px;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1441px){
+    a.navbar__logo{
+        width: 65px;
+        height: 65px;
+    }
+    p#lText1{
+        font-size: 22px;
+    }
+    p#lText2{
+        font-size: 16px;
+    }
+    ul#navResponsive{
+        margin-right: 28%;
+    }
+    li.navbar__item{
+        font-size: 22px;
+    }
+    li#btnBox{
+        margin-right: 10%;
+    }
+    button#btn0{
+        width: 185px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+    div.about__imageBox{
+        width: 77%;
+        height: 90%;
+    }
+    p.about__firstTxt{
+        font-size: 28px;
+    }
+    p.about__secondTxt{
+        font-size: 22px;
+    }
+    div.about__itemBox{
+        width: auto;
+        height: auto;
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+    div.about__itemBoxInner{
+        width: 135px !important;
+        height: 135px !important;
+    }
+    p.about__innerTxt{
+        font-size: 16px;
+    }
+    div.about__leftMainBox{
+        margin-top: 28%;
+    }
+    div.property__smallBox{
+        margin-left: 9%;
+    }
+    input.blueBox__input{
+        margin-top: 50px;
+    }
+    a.blueBox__image{
+        background-size: 100% 75%;
+    }
+    button#drugBut{
+        margin-right: -19%;
+    }
+    div.header,div.blueBox{
+        height: 65vh;
+    }
+    div.property{
+        height: 75vh;
+    }
+    p.property__leftTxt0{
+        margin-top: 25%;
+    }
+    div.property__rightMainBox{
+        height: auto;
+        margin-top: 20%;
+    }
+    p.property__detailTxt{
+        margin-right: 11% !important;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+    a.navbar__logo{
+        margin-top: 0;
+    }
+    a.footer__last{
+        margin-top: 10px !important;
+    }
+    div.about__leftMainBox{
+        margin-top: 18%;
+    }
+    div#vl0,div.vl2{
+        margin-top: 0px;
+    }
+    p.property__leftTxt0{
+        margin-bottom: 5px;
+    }
+    p.property__leftTxt1{
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+    div.property__leftMainBox{
+        margin-bottom: 1.5%;
+    }
+    div.drugStore{
+        margin-bottom: 0;
+    }
+    button#drugBut{
+        margin-right: -15%;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (max-width: 1260px) and (min-width: 1025px){
+    p#lText2{
+        width: 150px;
+    }
+    nav.navbar{
+        margin: 0;
+    }
+    div.property__smallBox{
+        width: 100px;
+        height: 100px;
+        margin: 7% 0 0 7%;
+    }
+    button#drugBut{
+        margin-right: -19%;
+    }
+    div.about__itemBox{
+        margin: 6% 0 10px 5%;
+    }
+    div.about__leftMainBox{
+        margin-right: 10%;
+        margin-top: 18%;
+    }
+    p.property__leftTxt0{
+        margin-top: 24%;
+    }
+    div.property{
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1025px){
+    li#btnBox{
+        margin-right: 7%;
+    }
+    div.about__imageBox{
+        height: 400px;
+    }
+    div.about__itemBox{
+        margin-top: 4%;
+    }
+    a.blueBox__image{
+        background-size: 95% 85%;
+    }
+    button#drugBut{
+        margin-right: -21%;
+    }
+    div.property{
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    a.navbar__logo{
+        margin-top: 0;
+    }
+    li.navbar__item{
+        font-size: 14px;
+    }
+    button#btn1{
+        width: 45%;
+        height: 12%;
+        margin-left: 25%;
+        font-size: 16px;
+    }
+    button#btn2{
+        width: 45%;
+        height: 12%;
+        margin-right: 25%;
+        font-size: 16px;
+    }
+    p#aboutBox00{
+        font-size: 15px;
+    }
+    p.about__secondTxt{
+        font-size: 13px;
+    }
+    div.about__itemBox{
+        width: auto;
+        height: auto;
+        margin: 5% 0 0 5%;
+    }
+    div.about__leftMainBox{
+        margin-right: 12%;
+        margin-top: 23%;
+    }
+    div.property__rightMainBox{
+        width: 70%;
+    }
+    div.property__smallBox{
+        width: 80px;
+        height: 80px;
+    }
+    p.property__smallBoxTxt{
+        font-size: 10px;
+    }
+    a.drugStore__image{
+        background-size: 85% 85%;
+    }
+    div.property{
+        height: 80vh;
+    }
+    p#lText1{
+        margin-bottom: 0;
+    }
+    p#lText2{
+        width: 150px;
+    }
+    li#btnBox{
+        margin: 5px 7% 10px 0;
+    }
+    button#btn0{
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+    ul#navResponsive{
+        margin-right: 27%;
+    }
+    p.header__firstTxt{
+        margin-top: 15%;
+    }
+    div.about__imageBox{
+        height: 310px;
+    }
+    div#vl0{
+        margin-top: 0;
+    }
+    div.about__itemBoxInner{
+        width: 75px !important;
+        height: 75px !important;
+        background-size: 35px 35px !important;
+    }
+    p.about__innerTxt{
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    div.property__smallBox{
+        margin: 10% 0 0 10%;
+        width: 95px;
+        height: 95px;
+    }
+    p.property__leftTxt0{
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    p.property__leftTxt1{
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 2%;
+    }
+    div.vl1{
+        margin-top: 0;
+    }
+    a.blueBox__image{
+        background-size: 95% 80% !important;
+    }
+    div.drugStore{
+        margin-bottom: 0;
+    }
+    div.vl2{
+        margin-top: 0;
+    }
+    button#drugBut{
+        font-size: 10px;
+        padding: 3px;
+        margin-right: -20%;
+    }
+    footer.footer{
+        height: 60vh;
+        margin-bottom: 0;
+    }
+    p.support__firstTxt{
+        margin-top: 10px;
+    }
+    p.support__secondTxt{
+        margin-top: 14px;
+    }
+    a.footer__last{
+        margin-top: 0 !important;
+    }
+    p#lastText1{
+        margin-bottom: 0;
+    }
+    div.footer__logoTxt{
+        margin: 0;
+    }
+    p.property__detailTxt{
+        margin-right: 10%;
+    }
+    .property__leftIconBox--active::after,.property__leftIconBox--active::before{
+        right: 50%;
+    }
+}
+
+
+@media screen and (max-width: 850px){
+    ul#navResponsive{
+        display: none;
+        position: absolute;
+        margin-top: 12%;
+        padding-right: 9%;
+        width: 50%;
+        border-radius: 15px;
+    }
+    .show{
+        display: flex;
+    }
+    button.navbar__burger{
+        display: block;
+        float: left;
+        margin: 4% 0 0 9%;
+    }
+    div.navbar__logoBox{
+        width: 30%;
+        margin-right: 5.5%;
+    }
+    ul.navbar__list{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-right: 3% !important;
+        padding-right: 0;
+    }
+    a.navbar__logo{
+        width: 40px;
+        height: 40px;
+        background-size: 100% 100%;
+        margin-left: 5px;
+    }
+    p#lText1{
+        font-size: 12px;
+        margin-top: 5px !important;
+    }
+    p#lText2{
+        font-size: 8px;
+    }
+    p.header__firstTxt{
+        font-size: 18px;
+        margin-right: 15%;
+    }
+    p.header__secondTxt{
+        font-size: 10px;
+        margin-right: 15%;
+    }
+    button#btn1,button#btn2{
+        margin-right: 15% !important;
+    }
+    div.about__itemBox{
+        width: auto;
+        height: auto;
+        margin-top: 2%;
+    }
+    div.about__itemBoxInner{
+        width: 65px !important;
+        height: 65px !important;
+        background-size: 30px 30px !important;
+    }
+    p.about__innerTxt{
+        width: auto;
+        font-size: 10px;
+    }
+    div.about__imageBox{
+        width: 100%;
+        height: 100%;
+        margin-right: 20%;
+    }
+    li.navbar__item{
+        font-size: 12px;
+        width: 100%;
+    }
+    a.header__image{
+        height: 85%;
+    }
+    p.property__leftTxt0{
+        font-size: 14px;
+    }
+    p.property__leftTxt1{
+        width: 75%;
+    }
+    p.property__leftTxt1,p.property__stepTxt{
+        font-size: 12px;
+    }
+    p.property__detailTxt{
+        font-size: 10px;
+    }
+    input.blueBox__input{
+        font-size: 13px !important;
+    }
+    button.blueBox__button{
+        font-size: 10px !important;
+    }
+    button.btn0{
+        width: 30%;
+        height: 25%;
+    }
+    button#drugBut{
+        font-size: 10px;
+        margin-right: -23%;
+    }
+    p.support__firstTxt{
+        font-size: 16px;
+    }
+    p.support__secondTxt{
+        font-size: 10px;
+    }
+    p.footer__infoTxt{
+        font-size: 13px;
+    }
+    li.footer__mainTxtType{
+        font-size: 12px;
+    }
+    div.property{
+        height: 75vh;
+        margin-bottom: 7%;
+    }
+    div.about__leftMainBox{
+        margin-top: 17%;
+    }
+    a.about__image{
+        height: 95%;
+    }
+    div.property__smallBox{
+        margin: 12% 0 0 8%;
+        width: 80px;
+        height: 80px;
+    }
+    p.property__smallBoxTxt{
+        font-size: 8px;
+        margin-top: 3px;
+    }
+    div.property__leftIconBox{
+        width: 30px;
+        height: 30px;
+    }
+    a.blueBox__image{
+        background-size: 97% 74% !important;
+    }
+    div.about__itemContainer{
+        padding-top: 10px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    button#btn1,button#btn2{
+        height: 10%;
+        font-size: 14px;
+    }
+    div.blueBox{
+        height: 65vh;
+    }
+    div.support__innerBox{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 730px){
+    div.header__leftBox{
+        width: 100%;
+        height: 50%;
+        float: top;
+    }
+    div.header__rightBox{
+        width: 100%;
+        height: 50%;
+        float: bottom;
+    }
+    a.header__image{
+        background-image: url("images/newTop.svg");
+        width: 100%;
+        margin-right: 0;
+    }
+    p.header__firstTxt{
+        margin-top: 40px;
+        margin-right: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+    p.header__secondTxt{
+        margin-right: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    div.header__rightBox{
+        text-align: center;
+    }
+    button#btn1,button#btn2{
+        width: 50%;
+        height: 25%;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    div.about__rightBox{
+        width: 100%;
+        height: 50%;
+        float: top !important;
+        display: flex;
+        justify-content: center;
+    }
+    div.about__imageBox{
+        margin-right: 0;
+    }
+    div.about__leftBox{
+        width: 100%;
+        height: auto;
+        float: bottom !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p.about__secondTxt{
+        width: 85%;
+        font-size: 14px;
+        color: #939393;
+    }
+    div#vl0{
+        margin-top: 14px;
+    }
+    div.property__rightBox{
+        float: top;
+        width: 100%;
+        height: 40%;
+    }
+    div.property__leftBox{
+        float: bottom;
+        width: 100%;
+        height: 60%;
+    }
+    div.property__rightMainBox{
+        margin: 12% 7% 5% 0;
+        width: 93%;
+    }
+    div.property__smallBox--style{
+        width: 100px;
+        height: 100px;
+        margin: 7% 0 0 7%;
+    }
+    div.property{
+        height: 100vh;
+    }
+    p.property__leftTxt0{
+        margin: 7% 7% 0 0;
+    }
+    p.property__leftTxt1{
+        margin: 3% 7% 3% 0;
+        width: 75%;
+    }
+    div.property__leftMainBox{
+        width: 85%;
+        height: 15%;
+        margin: 0% 7%;
+    }
+    p.property__stepTxt{
+        margin-right: 2%;
+    }
+    p.property__detailTxt{
+        margin-right: 13%;
+        width: 75%;
+    }
+    div.blueBox{
+      display: flex;
+      flex-flow: revert;
+      flex-wrap: wrap-reverse;
+      height: 100vh;
+    }
+    div.blueBox__rightMainBox{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    div.blueBox__right{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    p.blueBox__text,p.blueBox__secondText{
+        text-align: center;
+    }
+    input.blueBox__input{
+        width: 70% !important;
+        font-size: 14px !important;
+    }
+    button.blueBox__button{
+        font-size: 14px !important;
+        margin-right: -18%;
+    }
+    div.blueBox__left{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    button.btn0{
+        width: 23%;
+        height: 20%;
+        margin: 3% 8% 0 0;
+        overflow: visible;
+    }
+    button.Sib{
+        margin-top: 3%;
+    }
+    div.drugStore{
+        height: 100vh;
+    }
+    div.drugStore__mainBox{
+        height: 85%;
+    }
+    div.drugStore__mainBoxLeft{
+        width: 100%;
+        height: 50%;
+    }
+    div.drugStore__mainBoxRight{
+        width: 100%;
+        height: 50%;
+        padding-top: 4%;
+    }
+    p.drugStore__secondText{
+        margin: 3% 0 0 0;
+
+    }
+    input#number{
+        margin: 15px 7% 0 0 !important;
+    }
+    div.support{
+        width: 100%;
+        height: auto;
+        padding-bottom: 4%;
+    }
+    div.support__mainBox{
+        width: 100%;
+        height: 100%;
+    }
+    p.support__firstTxt{
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 16px;
+        margin: 15px 0 10px 0;
+    }
+    p.support__secondTxt{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
+    }
+    div.supportBox{
+        width: 100%;
+        margin-top: 3%;
+    }
+    div.footer__leftBox,div.footer__rightBox,p.removable,button#sib0,button#bazar0{
+        display: none;
+    }
+    footer.footer{
+        height: 35vh;
+    }
+    div#lastResponsive{
+        width: 100%;
+        height: auto;
+    }
+    div#remove0,div#remove1{
+        width: 0 !important;
+        height: 0 !important;
+    }
+    div.footer__secondBox{
+        width: auto;
+        height: auto;
+        margin: 5% 7% 5% 0 !important;
+    }
+    i#linkedIn{
+        margin-right: 35%;
+    }
+    div.about__itemBox{
+        margin-left: 7%;
+    }
+    div.about__itemBoxInner{
+        width: 95px !important;
+        height: 95px !important;
+        background-size: 40px 40px !important;
+    }
+    p.about__innerTxt{
+        font-size: 13px;
+    }
+    div.about__rightBox{
+        display: none;
+    }
+    div.about__leftMainBox{
+        margin-right: 7%;
+    }
+    a.drugStore__image{
+        width: 93%;
+        background-size: 100% 85%;
+        background-position: 75% 100%;
+        float: left;
+    }
+    input#number{
+        font-size: 14px !important;
+    }
+    button#drugBut{
+        margin-right: -14%;
+    }
+    div.property{
+        height: 130vh;
+        margin-bottom: 0 !important;
+    }
+    a.blueBox__image{
+        background-size: 100% 100% !important;
+    }
+    input.firstOne{
+        margin-right: 15%;
+    }
+    div#badge2{
+        background-position: 50% 52%;
+    }
+    p.property__smallBoxTxt{
+        margin-top: 10px;
+    }
+    div.support__innerBox{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 675px){
+    button.navbar__burger{
+        margin: 5% 0 0 9%;
+    }
+    ul#navResponsive{
+        margin-top: 15%;
+    }
+    div.property__smallBox,div.about__itemBoxInner{
+        width: 90px !important;
+        height: 90px !important;
+    }
+    div#vl0{
+        margin-top: 15px;
+    }
+    button#drugBut{
+        margin-right: -17%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.property__smallBox,div.about__itemBoxInner{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    p.about__innerTxt{
+        font-size: 11px;
+    }
+    p.property__smallBoxTxt{
+        margin-top: 7px;
+    }
+    div.property{
+        height: 120vh;
+    }
+    div.property__rightMainBox{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 530px){
+    button#drugBut{
+        font-size: 8px;
+        padding: 5px;
+        margin-right: -18%;
+    }
+    div#lBoxLast,div#lastOne{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    div.property__smallBox{
+       margin: 7% 7px 15px 7%;
+    }
+    a.property__same{
+        width: 80px;
+    }
+    i#linkedIn{
+        margin-right: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    div.property__smallBox--active{
+        display: block;
+    }
+    p.property__leftTxt0{
+        margin-top: 40px;
+    }
+    p.property__leftTxt1{
+        margin-bottom: 10%;
+    }
+    p.drugStore__secondText{
+        margin-bottom: 0;
+    }
+    button.navbar__burger{
+        margin-top: 7%;
+    }
+    ul#navResponsive{
+        margin-top: 22%;
+    }
+    a.header__image{
+        height: 100%;
+        background-size: 100% 82%;
+        background-repeat: no-repeat;
+        background-position: 21% 85%;
+    }
+    div.header{
+        height: 120vh;
+    }
+    button#btn1,button#btn2{
+        width: 50%;
+        height: 17%;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+    button#btn1{
+        margin-top: 0;
+    }
+    div.about__itemBoxInner--active{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    div.about__rightBox{
+        display: block;
+    }
+    div.blueBox{
+        height: 80vh;
+    }
+    input.blueBox__input{
+        font-size: 14px !important;
+    }
+    button.blueBox__button{
+        font-size: 12px !important;
+    }
+    button.btn0{
+        margin-top: 0 !important;
+    }
+    button#sib{
+        margin-top: 0;
+    }
+    div.drugStore{
+        height: 85vh;
+    }
+    a.drugStore__image{
+        width: 90%;
+        background-size: 85% 85%;
+    }
+    input#number{
+        font-size: 10px !important;
+    }
+    button#drugBut{
+        font-size: 8px;
+        margin-right: -22%;
+    }
+    div.property__smallBox--style{
+        width: 80px;
+        height: 80px;
+    }
+    div.propertyRight{
+        height: auto;
+    }
+    div.property{
+        margin-bottom: 0;
+        height: 120vh;
+    }
+    div#vl0{
+        margin-top: 17px;
+        height: 20px;
+    }
+    p.header__secondTxt{
+        margin-bottom: 35px !important;
+    }
+    p.about__secondTxt{
+        width: 87%;
+        text-align: justify;
+    }
+    div.about{
+        height: 130vh;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    a.about__image{
+        width: 100%;
+        height: 100%;
+        background-size: 75% 95%;
+    }
+    div.about__leftMainBox{
+        margin-top: 12%;
+    }
+    input.firstOne{
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-right: 13%;
+    }
+    div#badge2{
+        background-position: 51% 58%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    p.property__leftTxt0{
+        margin-top: 25px;
+    }
+    div#lastOne{
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    button#burger{
+        margin: 8% 0 0 11% !important;
+    }
+    div.navbar__logoBox{
+        width: auto;
+    }
+    a.header__image{
+        width: 94%;
+    }
+    div.about{
+        height: 120vh;
+    }
+    div.property{
+        height: 115vh;
+    }
+    p.property__smallBoxTxt{
+        margin-top: 8px;
+    }
+    button#googlePlay{
+        display: none;
+    }
+    button.btn0{
+        width: 30%;
+    }
+    button#bazar{
+        margin-right: 17%;
+    }
+    button#drugBut{
+        padding: 3px;
+        margin-right: -24%;
+    }
+    i#linkedIn{
+        margin-right: 25%;
+    }
+    .property__leftIconBox--active::after,.property__leftIconBox--active::before{
+        opacity: 0.2;
+    }
+    a.about__image{
+        background-size: 82% 95%;
+    }
+    div.about__leftBox{
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+    div.about__leftMainBox{
+        margin-right: 13%;
+    }
+    div#lastOne{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    div.blueBox{
+        height: 110vh;
+    }
+    button.btn0{
+        width: 40%;
+        margin-right: 30% !important;
+    }
+    p.blueBox__secondText{
+        font-size: 12px;
+        width: 90%;
+        margin-right: 5%;
+    }
+    div.lastBox88{
+        margin-left: 0;
+    }
+    p.property__leftTxt1{
+        width: 82%;
+    }
+    p.property__leftTxt0{
+        margin-top: 0;
+    }
+    div#lBoxLast{
+        margin-left: 0;
+    }
+    div.about__leftMainBox{
+        margin-right: 18%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    a.navbar__logo{
+        width: 35px;
+        height: 35px;
+    }
+    p#lText1{
+        font-size: 10px;
+    }
+    p#lText2{
+        font-size: 6px;
+    }
+    button#burger{
+        margin: 10% 0 0 12%;
+    }
+    button#btn1,button#btn2{
+        font-size: 12px;
+        height: 15%;
+    }
+    div#vl0{
+        margin-top: 6%;
+    }
+    p.about__secondTxt{
+        font-size: 12px;
+    }
+    div.about__itemBoxInner{
+        width: 60px !important;
+        height: 60px !important;
+        background-size: 30px 30px !important;
+        border-radius: 15px;
+    }
+    p.about__innerTxt{
+        font-size: 9px;
+    }
+    p.property__smallBoxTxt{
+        font-size: 7px;
+        margin-top: 5px;
+    }
+    div.about{
+        height: 100vh;
+    }
+    div.property{
+        height: 115vh;
+    }
+    div.property__leftMainBox{
+        height: 20%;
+    }
+    p.blueBox__text{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    p.blueBox__secondText{
+        font-size: 12px;
+        margin-top: 0;
+    }
+    input.firstOne{
+        font-size: 12px !important;
+    }
+    button.blueBox__button{
+        font-size: 10px !important;
+    }
+    button.btn0{
+       width: 40%;
+        margin: 3% 4% 0 0;
+    }
+    p.drugStore__text{
+        font-size: 14px;
+    }
+    div.vl2{
+        height: 20px;
+    }
+    input#number{
+        font-size: 8px !important;
+        margin-right: 4% !important;
+    }
+    button#drugBut{
+        font-size: 6px;
+    }
+    p.support__firstTxt{
+        margin-bottom: 5px;
+    }
+    p.support__secondTxt{
+        font-size: 10px;
+    }
+    br.footer__br{
+        display: none;
+    }
+    i#linkedIn{
+        margin-right: 22%;
+    }
+    .property__leftIconBox--active::after,.property__leftIconBox--active::before{
+        right: 48%;
+        height: 60px;
+    }
+    a.about__image{
+        background-size: 100% 100%;
+    }
+    div.blueBox{
+        height: 100vh;
+    }
+    button.btn0{
+        height: 17%;
+    }
+    div.property__rightBox{
+        height: 35%;
+    }
+    div.about__leftMainBox{
+        margin-right: 7%;
+    }
+    div#lastOne{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 280px){
+    p.drugStore__text{
+        font-size: 12px;
+    }
+    p.footer__mainTxtType{
+        font-size: 9px !important;
+    }
+    button#drugBut{
+        border-radius: 4px;
+    }
+}
+
+/* responsive pharmacy page */
+
+@media screen and (max-width: 2800px) and (min-width: 1441px){
+    p.p-header__firstTxt{
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+    p.p-header__secondTxt{
+        font-size: 25px;
+        margin: 3% 25% 3% 0;
+        width: 70%;
+        line-height: 50px;
+    }
+    p.p-header__input{
+        font-size: 30px;
+    }
+    input.p-header__input{
+        font-size: 28px;
+    }
+    button.p-header__button{
+        font-size: 20px;
+        margin-right: -14% !important;
+    }
+    div.p-header__mainBox--active{
+        width: 500px;
+        height: 150px;
+    }
+    p.p-header__thirdTxt{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    div.p-header__textBox{
+        width: 70%;
+    }
+    div.p-header__location--active{
+        width: 25px;
+        height: 30px;
+        margin-left: 4%;
+    }
+    p.p-header__textBoxTxt{
+        font-size: 17px;
+    }
+    span.p-header__span{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin: 4% 0 0 4%;
+    }
+    div.p-header__mainBox--style{
+        width: 350px;
+        height: 100px;
+    }
+    p.p-header__thirdTxt--active{
+        font-size: 16px;
+    }
+    p.p-header__textBoxTxt--active{
+        font-size: 11px;
+        margin-top: 0;
+    }
+    span.p-header__span--active{
+        font-size: 10px;
+        padding: 3px 7px;
+        margin: 4% 0 0 4%;
+    }
+    p.p-blueBand__firstTxt{
+        font-size: 25px;
+        margin-top: 65px;
+    }
+    p.p-blueBand__secondTxt{
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+    }
+    p.p-servicesTop__firstTxt{
+        font-size: 30px;
+    }
+    p.p-servicesTop__secondTxt{
+        font-size: 22px;
+    }
+    div.vl-p0{
+        height: 45px !important;
+        width: 1px;
+    }
+    p.p-servicesBottom__firstTxt{
+        font-size: 30px;
+        margin-right: 22px;
+    }
+    p.p-servicesBottom__secondTxt{
+        font-size: 22px;
+        width: 85%;
+        margin-right: 22px;
+    }
+    button.p-servicesBottom__button{
+        width: 180px;
+        height: 60px;
+        font-size: 24px;
+        margin-right: 35%;
+    }
+    .footer__mainTxtType--li:hover{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1441px){
+    button.p-servicesBottom__button{
+        margin-right: 30%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+    p.p-blueBand__secondTxt{
+        margin: 0;
+    }
+    p.p-servicesBottom__firstTxt{
+        margin: 0 15px 0 0;
+    }
+    p.p-servicesBottom__secondTxt{
+        margin: 5px 15px 0 0;
+        width: 90%;
+    }
+    p.support__secondTxt{
+        margin-right: 8%;
+    }
+    p.p-blueBand__firstTxt{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    p.p-header__firstTxt{
+        font-size: 25px;
+    }
+    p.p-header__secondTxt{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    input.p-header__input{
+        width: 65%;
+        height: 10%;
+        font-size: 14px;
+    }
+    button.p-header__button{
+        font-size: 10px !important;
+        margin-right: -16% !important;
+    }
+    div.p-header__mainBox{
+        width: 350px;
+    }
+    div.p-header__image{
+        width: 15%;
+        height: 45%;
+        margin-top: 8.3%;
+        margin-right: 5%;
+    }
+    p.p-header__thirdTxt{
+        margin: 9% 0 10px 0;
+        font-size: 16px;
+    }
+    span.p-header__span{
+        margin: 5% 0 0 5%;
+    }
+    div.p-header__textBox{
+        width: 75%;
+    }
+    div.p-header__location{
+        margin-left: 3%;
+    }
+    div.p-header__mainBox--style{
+        width: 300px;
+    }
+    p.p-header__thirdTxt--active{
+        font-size: 14px;
+        margin: 7% 0 5px 0;
+    }
+    div.p-header__mainBox--last{
+        margin-right: 25% !important;
+    }
+    p.p-blueBand__firstTxt{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    p.p-blueBand__secondTxt{
+        font-size: 30px;
+    }
+    p.p-servicesBottom__firstTxt{
+        font-size: 18px;
+    }
+    p.p-servicesBottom__secondTxt{
+        font-size: 12px;
+    }
+    button.p-servicesBottom__button{
+        margin-top: 7%;
+        margin-right: 28%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    p.p-blueBand__secondTxt{
+        margin: 0;
+        text-align: center;
+    }
+    p.p-servicesBottom__firstTxt{
+        margin-bottom: 0;
+    }
+    button.p-servicesBottom__button{
+        margin: 2% 24% 0 0 !important;
+    }
+    div.p-servicesBottom__imgBox{
+        height: 50%;
+    }
+    button.p-header__button{
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    div.p-header__mainBox--last{
+        display: none;
+    }
+    p.p-header__firstTxt{
+        font-size: 20px;
+    }
+    p.p-header__secondTxt{
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    input.p-header__input{
+        width: 60%;
+        height: 10%;
+        font-size: 12px;
+    }
+    button.p-header__button{
+        font-size: 8px !important;
+    }
+    div.p-header__mainBox{
+        width: 300px;
+        height: 110px;
+    }
+    div.p-header__image{
+        width: 17%;
+        height: 41%;
+        margin: 10% 4% 0 3%;
+    }
+    p.p-header__thirdTxt{
+        margin: 10% 5px 10px 0;
+        font-size: 13px;
+    }
+    span.p-header__span{
+        margin: 5% 0 0 5%;
+        font-size: 10px;
+    }
+    p.p-header__textBoxTxt{
+        font-size: 10px !important;
+    }
+    div.p-header__mainBox--style{
+        width: 250px;
+    }
+    p.p-header__thirdTxt--active{
+        font-size: 12px;
+        margin: 12% 3% 2% 0;
+    }
+    p.p-header__textBoxTxt--active{
+        font-size: 8px !important;
+    }
+    p.p-blueBand__firstTxt{
+        font-size: 12px;
+    }
+    p.p-blueBand__secondTxt{
+        font-size: 25px;
+    }
+    div.p-servicesBottom{
+        height: 70vh;
+    }
+    p.p-servicesBottom__firstTxt{
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    button.p-servicesBottom__button{
+        width: 130px;
+        height: 37px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    button.p-servicesBottom__button{
+        margin-right: 23%;
+    }
+    div.p-servicesBottom__imgBox{
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 730px){
+    div.p-header__mainBox--style{
+        display: none;
+    }
+    div.p-header__leftBox{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: revert;
+    }
+    div.p-header__rightBox{
+        width: 100%;
+        height: 50%;
+    }
+    p.p-header__firstTxt{
+        margin: 0 !important;
+        font-size: 20px;
+        width: 80%;
+        padding: 0 10%;
+        text-align: center;
+    }
+    p.p-header__secondTxt{
+        width: 80%;
+        padding: 0 10%;
+        font-size: 14px;
+        margin: 3% 0 0 0;
+        text-align: center;
+    }
+    input.p-header__input{
+        margin-right: 14% !important;
+        width: 70%;
+        height: 25%;
+        font-size: 14px !important;
+    }
+    div.p-header__mainBox{
+       width: 70%;
+        height: 55%;
+        margin: 5% 15% 0 0;
+    }
+    div.p-header__textBox{
+        width: 70%;
+        margin-top: 5px;
+    }
+    p.p-header__thirdTxt{
+        font-size: 13px;
+        margin-bottom: 5px;
+        margin-top: 6%;
+    }
+    p.p-header__textBoxTxt{
+        font-size: 8px;
+        margin: 0;
+    }
+    div.p-blueBand{
+        overflow: hidden;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+    }
+    div.p-blueBand__mainBox{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    p.p-servicesTop__firstTxt{
+        font-size: 16px;
+        margin-right: 3%;
+    }
+    p.p-servicesTop__secondTxt{
+        font-size: 12px;
+    }
+    div.p-servicesBottom__rightBox{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.p-servicesBottom__leftBox{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.p-servicesBottom__mainBox{
+        width: 45%;
+        height: 90%;
+        margin-right: 0 !important;
+    }
+    button.p-servicesBottom__button{
+        margin-right: 28% !important;
+        margin-top: 6% !important;
+    }
+    div.p-header__image{
+        width: 15%;
+        height: 50%;
+        margin: 5% 1%;
+    }
+    div.p-blueBand{
+        height: 55vh;
+    }
+    p.p-blueBand__firstTxt{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    p.p-blueBand__secondTxt{
+        font-size: 27px;
+        text-align: center;
+    }
+    div.p-servicesBottom{
+        height: 130vh;
+    }
+    div.p-servicesBottom__imgRight,div.p-servicesBottom__imgLeft{
+        background-size: 70% 70%;
+    }
+    p.p-servicesBottom__firstTxt,p.p-servicesBottom__secondTxt{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    div.p-header{
+        display: flex;
+        flex-flow: column-reverse;
+        height: 75vh;
+    }
+    div.p-header__location--active{
+        margin-right: 0;
+    }
+    span.p-header__span{
+        margin: 3% 0 0 4%;
+        border-radius: 5px;
+    }
+    button.p-header__button{
+        margin-right: -12% !important;
+        font-size: 10px !important;
+        padding: 5px !important;
+    }
+    div.vl-p0{
+        height: 25px !important;
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 650px){
+    div.p-header__image{
+        margin: 5% 3%;
+    }
+    button.p-header__button{
+        margin-right: -14% !important;
+    }
+}
+
+@media screen and (max-width: 550px){
+    button.p-header__button{
+        font-size: 10px !important;
+    }
+    div.p-header__mainBox{
+        margin-top: 9%;
+    }
+    button.p-servicesBottom__button{
+        margin-right: 22% !important;
+    }
+    div.p-header__image{
+        margin: 5% 4%;
+    }
+    button.p-header__button{
+        margin-right: -17% !important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    input.p-header__input{
+        font-size: 12px !important;
+        height: 20% !important;
+        margin: 5% 13% 0 0 !important;
+    }
+    button.p-header__button{
+        font-size: 8px !important;
+        margin-right: -16% !important;
+    }
+    div.p-header{
+        margin-bottom: 10%;
+    }
+    div.p-header__textBox{
+        width: 75%;
+        margin-right: 5%;
+    }
+    p.p-header__thirdTxt{
+        margin: 9% 5% 5px 0;
+    }
+    div.p-header__image{
+        margin: 5% 5% 5% 0 !important;
+        height: 65%;
+    }
+    p.p-servicesBottom__firstTxt{
+        margin-top: 5%;
+    }
+    p.p-servicesBottom__secondTxt{
+        margin: 10px 0 5px 0;
+        font-size: 10px;
+    }
+    button.p-servicesBottom__button{
+        width: 60%;
+        height: 10%;
+        font-size: 12px;
+        margin-right: 20% !important;
+    }
+    p.p-header__firstTxt{
+        font-size: 16px;
+    }
+    p.p-header__secondTxt{
+        font-size: 12px;
+    }
+    p.p-blueBand__firstTxt{
+        font-size: 16px;
+    }
+    p.p-blueBand__secondTxt{
+        font-size: 24px;
+    }
+    p.p-servicesTop__firstTxt{
+        margin-right: 7%;
+    }
+    div.vl-p0{
+        margin-top: 0;
+    }
+    div.p-servicesBottom__mainBox{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    span.p-header__span{
+        font-size: 9px;
+        margin: 5% 0 0 5%;
+    }
+    p.p-header__firstTxt{
+        font-size: 14px;
+    }
+    p.p-header__secondTxt{
+        font-size: 10px;
+    }
+    button.p-header__button{
+        margin-right: -21% !important;
+    }
+    p.p-header__textBoxTxt{
+        font-size: 8px !important;
+        margin-top: 3px;
+    }
+    p.p-servicesTop__firstTxt{
+        font-size: 13px;
+    }
+    p.p-servicesTop__secondTxt{
+        font-size: 10px;
+    }
+    div.vl-p0{
+        height: 25px !important;
+    }
+    div.p-servicesBottom__mainBox{
+        border-radius: 20px;
+    }
+    div.p-servicesBottom{
+        height: 135vh;
+    }
+    p.p-servicesBottom__firstTxt{
+        margin-top: 0;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    p.p-header__thirdTxt{
+        margin-top: 14% !important;
+    }
+    div.p-header__image{
+        margin-top: 9% !important;
+    }
+    button.p-header__button{
+        font-size: 7px !important;
+        margin-right: -19% !important;
+    }
+    div.p-servicesBottom__mainBox{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    p.p-header__textBoxTxt{
+        font-size: 7px !important;
+    }
+    input.p-header__input{
+        font-size: 10px !important;
+    }
+    button.p-header__button{
+        margin-right: -22% !important;
+    }
+    p.p-header__thirdTxt{
+        font-size: 11px;
+    }
+}
+
+
+/* responsive FAQ page */
+
+
+@media screen and (max-width: 2800px) and (min-width: 1441px){
+    p.f-blueLine__text{
+        font-size: 40px;
+    }
+    p.f-main__firstTxt{
+        font-size: 30px;
+    }
+    div.faqGreenLine0{
+        height: 40px !important;
+        width: 2px;
+        margin-top: 5px;
+    }
+    div.f-main__plusIcon,div.f-main__minusIcon{
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    p.f-main__questionText{
+        font-size: 25px;
+    }
+    p.f-main__questionTextSecond{
+        font-size: 22px;
+        margin-right: 8%;
+    }
+    div.faqGreenLine{
+        width: 2px;
+        height: 35px !important;
+        margin: 0 5% !important;
+    }
+    div.property__smallBox--new{
+        margin-top: 8% !important;
+    }
+    span.f-main__span{
+        width: max-content;
+        font-size: 16px;
+        margin-right: 34%;
+    }
+    div.f-main{
+        margin-bottom: 10%;
+    }
+    div.f-main__box{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    p.f-main__text{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 2200px) and (min-width: 1441px){
+    div.f-main{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1441px){
+    div.f-main{
+        margin-bottom: 0;
+    }
+    span.f-main__span{
+        font-size: 14px;
+        margin-right: 30%;
+    }
+    p.f-main__text{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1441px){
+    div.f-main {
+        margin-bottom: 0;
+        height: 95vh;
+    }
+    span.f-main__span{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1441px){
+    div.f-main {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    div.f-main__plusIcon,div.f-main__minusIcon{
+        margin-top: 5px;
+    }
+    p.f-main__text{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1320px){
+    div.property__smallBox--new{
+        margin-left: 7% !important;
+    }
+}
+@media screen and  (max-width: 1260px){
+    p.f-blueLine__text{
+        font-size: 25px;
+    }
+    div.f-blueLine{
+        height: 17vh;
+    }
+    div.property__smallBox--new{
+        width: 120px !important;
+        height: 120px !important;
+        margin: 7% 10px 10px 7%;
+    }
+    span.f-main__span{
+        margin: -9% 25% 0 0;
+        font-size: 11px;
+    }
+    div.faqGreenLine{
+        height: 25px !important;
+    }
+    p.f-main__text{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    div.f-main{
+        margin-bottom: 7%;
+    }
+    p.f-blueLine__text{
+        font-size: 22px !important;
+    }
+    p.f-main__firstTxt{
+        font-size: 18px;
+    }
+    div.f-main__plusIcon,div.f-main__minusIcon{
+        width: 15px;
+        height: 15px;
+        margin-top: 4px;
+    }
+    p.f-main__questionText{
+        font-size: 14px;
+    }
+    p.f-main__questionTextSecond{
+        font-size: 12px;
+        margin-right: 8%;
+    }
+    div.faqGreenLine{
+        height: 20px !important;
+    }
+}
+
+@media screen and (max-width: 850px){
+    div.f-main{
+        margin-bottom: 4%;
+    }
+    p.f-main__firstTxt{
+        font-size: 16px;
+    }
+    div.f-main__plusIcon,div.f-main__minusIcon{
+        width: 12px;
+        height: 12px;
+        margin-top: 4px;
+    }
+    p.f-main__questionText{
+        font-size: 12px;
+    }
+    p.f-main__questionTextSecond{
+        font-size: 10px;
+    }
+    div.faqGreenLine0{
+        height: 25px !important;
+    }
+    div.property__smallBox--new{
+        width: 100px !important;
+        height: 100px !important;
+        margin: 7% 10px 10px 7%;
+    }
+    span.f-main__span{
+        font-size: 10px;
+        padding: 0 9px;
+    }
+    div.f-main__questionBox{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 730px){
+    p.f-blueLine__text{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    div.f-blueLine{
+        height: 10vh;
+    }
+    div#f-Q,hr.f-main__line--active{
+        display: none;
+    }
+    div.f-main__innerBox{
+        flex-flow: row nowrap;
+    }
+    div.property__smallBox--new{
+        width: 120px;
+        height: 120px;
+    }
+    p.f-main__questionText,p.f-main__questionTextSecond{
+        font-size: 12px;
+        margin: 20px 0 !important;
+    }
+    p#f-txt{
+        margin-right: 10% !important;
+    }
+    div.f-main{
+        margin-bottom: 0;
+    }
+    p.f-main__firstTxt{
+        margin-right: 5% !important;
+    }
+    a.f-main--same{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    div.f-main{
+        height: 95vh;
+    }
+}
+
+@media screen and (max-width: 450px){
+    div.f-main__txtBox{
+        margin-top: 11%;
+    }
+    p.f-main__firstTxt{
+        margin-right: 5%;
+    }
+    div.f-main__innerBox{
+        margin-right: 10%;
+    }
+    div.f-main__questionBox{
+        margin-top: 12%;
+    }
+    div.faqGreenLine{
+        height: 20px !important;
+    }
+    div.f-main{
+        height: 90vh;
+    }
+    a.footer__last{
+        margin-left: 0 !important;
+    }
+    div.navbar__faq{
+        height: 18vh !important;
+    }
+    div.f-blueLine--active{
+        height: 12vh !important;
+    }
+    br.footer__br{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px){
+    p.f-main__firstTxt{
+        font-size: 14px;
+    }
+    p.f-main__questionText{
+        font-size: 11px;
+    }
+    div.property__smallBox--new{
+        width: 90px !important;
+        height: 90px !important;
+    }
+    a.f-main--same{
+        width: 90px;
+    }
+    span.f-main__span{
+        font-size: 9px;
+        margin: -10% 23% 0 0;
+    }
+    div.f-main{
+        height: 85vh;
+    }
+    p.footer__mainTxtType{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 300px){
+    div.f-main__questionBox{
+        margin-right: 8% !important;
+    }
+    div.f-main{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 280px){
+    p.f-main__questionText{
+        font-size: 10px;
+    }
+}
+
+/* responsive contact page */
+
+
+@media screen and (max-width: 2800px) and (min-width: 1441px){
+    div.c-main__image{
+        width: 950px;
+        height: 845px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    div.c-main__infoBox{
+       width: 850px;
+       margin: -360px 50px 0 50px;
+    }
+    p.c-main__formTxt{
+        font-size: 24px;
+        margin-top: 2%;
+    }
+    input.c-main__formInput{
+        height: 6vh;
+        font-size: 20px;
+    }
+    textarea.c-main__formInput{
+        font-size: 24px;
+    }
+    input.c-main__formButton{
+        font-size: 22px;
+        width: 77.5%;
+    }
+    p.c-main__firstTxt{
+        font-size: 22px;
+    }
+    p.c-main__secondTxt{
+        font-size: 20px;
+        width: max-content;
+    }
+    p.c-main__thirdTxt{
+        font-size: 22px;
+        line-height: 40px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1441px){
+    input.c-main__formInput{
+        height: 4vh;
+    }
+    textarea.c-main__formInput{
+        height: 20vh !important;
+    }
+    div.c-main{
+        margin-bottom: 0;
+    }
+    footer.footer{
+        height: 50vh;
+    }
+    div.c-main__image{
+        width: 800px;
+        height: 745px;
+    }
+    div.c-main__infoBox{
+        width: 700px;
+        margin: -370px 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1441px){
+    div.c-main__image{
+        width: 780px;
+        height: 735px;
+    }
+    div.c-main__infoBox{
+        width: 680px;
+        margin: -370px 50px 0 50px;
+    }
+    div.c-main{
+        height: 100vh;
+    }
+    p.c-main__thirdTxt{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1441px){
+    div.c-main__rightBox{
+        width: 45%;
+    }
+    div.c-main__leftBox{
+        width: 55%;
+    }
+    form.c-main__form{
+        margin: 20% 15% 0 0;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1441px){
+    div.c-main{
+        height: 95vh;
+    }
+    div.c-main__image{
+        width: 700px;
+        height: 680px;
+    }
+    div.c-main__infoBox{
+        width: 600px;
+        margin: -300px 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){
+    p.f-blueLine__text{
+        font-size: 26px;
+    }
+    p.c-main__formTxt{
+        font-size: 16px;
+    }
+    div.c-main__image{
+        height: 465px;
+        width: 570px;
+        margin-top: 19%;
+    }
+    div.c-main__infoBox{
+        height: 30%;
+        width: 520px;
+        margin: -200px 25px 0 25px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    div.c-main__image{
+        height: 450px;
+        width: 450px;
+    }
+    div.c-main__infoBox{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    div.c-main__txtBox{
+        width: auto;
+    }
+    p.c-main__thirdTxt{
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    div.f-blueLine{
+        height: 17vh;
+    }
+    p.f-blueLine__text{
+        font-size: 25px;
+    }
+    p.c-main__firstTxt,p.c-main__secondTxt{
+        font-size: 12px;
+    }
+    p.c-main__thirdTxt{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    div.c-main__infoBox{
+        margin-top: -22%;
+    }
+    div.c-main__image{
+        height: 395px;
+        width: 385px;
+        margin-top: 19.5%;
+    }
+    div.c-main__infoBox{
+        height: 30%;
+        margin: -175px 15px 0 15px;
+        width: 355px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    div.f-blueLine{
+        height: 15vh;
+    }
+    p.f-blueLine__text{
+        font-size: 20px;
+    }
+    p.c-main__secondTxt{
+        font-size: 10px;
+    }
+    input.c-main__formButton{
+        width: 83%;
+    }
+    div.c-main__image{
+        width: 345px;
+        height: 385px;
+        background-attachment: local;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    div.c-main__infoBox{
+        width: 315px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    div.c-main{
+        height: 200vh;
+        display: flex;
+        flex-flow: column-reverse;
+        margin-bottom: 0;
+    }
+    div.c-main__leftBox{
+        width: 100%;
+        height: 50%;
+    }
+    div.c-main__rightBox{
+        width: 100%;
+        height: 50%;
+    }
+    form.c-main__form{
+        margin: 0 13% 0 0;
+    }
+    div.c-main__image{
+        width: 80%;
+        height: 80% !important;
+        margin: 10% 10% 0 0 !important;
+        position: relative;
+        border-radius: 20px;
+    }
+    div.c-main__infoBox{
+        position: absolute;
+        margin: -160px 12.5% 0 0;
+        width: 75%;
+        height: 27%;
+        border-radius: 15px;
+    }
+    div.c-main__infoRightBox{
+        width: 100%;
+        height: 50%;
+    }
+    div.c-main__infoLeftBox{
+        width: 100%;
+        height: 50%;
+    }
+    div#cTextRight{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    div#cTextLeft{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    p.c-main__firstTxt{
+        font-size: 14px;
+        margin: 10px 0 0 0 !important;
+        text-align: center;
+    }
+    p.c-main__secondTxt{
+        font-size: 13px;
+        margin: 5px 0px 0 0;
+        text-align: center;
+    }
+    p#address{
+        margin-top: 0 !important;
+    }
+    p.c-main__thirdTxt{
+        font-size: 10px;
+        width: 90%;
+        margin: 5px 5% !important;
+        text-align-last: center;
+    }
+    p.c-main__formTxt{
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    input.c-main__formButton{
+        font-size: 18px;
+        height: 10vh;
+        width: 86%;
+        margin-top: 3%;
+    }
+    input.c-main__formInput,textarea.c-main__formInput{
+        width: 82%;
+    }
+}
+@media screen and (max-width: 650px){
+    div.c-main{
+        height: 185vh;
+    }
+}
+@media screen and (max-width: 450px){
+    br.footer__br{
+        display: none;
+    }
+    div.c-main{
+        margin-bottom: 0;
+    }
+    div.c-main__infoBox{
+        margin-top: -37%;
+    }
+    input.c-main__formButton{
+        width: 89%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    div.c-main{
+        height: 180vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    form.c-main__form{
+        margin-right: 8%;
+    }
+    div.c-main{
+        height: 175vh;
+    }
+    p.footer__mainTxtType{
+        font-size: 10px;
+    }
+    p.c-main__firstTxt{
+        font-size: 12px;
+    }
+    p.c-main__secondTxt{
+        font-size: 11px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 320px){
+    input.c-main__formButton{
+        width: 91%;
+    }
+}
+
+
+/*   last changes to making project fully responsive :)   */
+
+
+/*   main page   */
+
+@media screen and (max-height: 1100px) and (min-height: 700px){
+    @media screen and (max-width: 1440px){
+        nav.navbar{
+            height: 12vh;
+        }
+        div.header{
+            height: 50vh;
+        }
+        div.about{
+            height: 40vh;
+        }
+        div.property{
+            height: 58vh;
+            margin-bottom: 2%;
+        }
+        div.blueBox{
+            height: 35vh;
+        }
+        div.drugStore{
+            height: 45vh;
+        }
+        div.support{
+            height: 15vh;
+        }
+        div.support__mainBox{
+            height: 5vh;
+        }
+        footer.footer{
+            height: 32vh;
+            margin-bottom: 1%;
+        }
+        div.about__leftMainBox{
+            margin-top: 15%;
+        }
+    }
+    @media screen and (max-width: 1260px){
+        div.property{
+            height: 53vh;
+        }
+        p.property__smallBoxTxt{
+            font-size: 11px;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        div.header{
+            height: 42vh;
+        }
+        button#btn1,button#btn2{
+          border-radius: 9px;
+          width: 36%;
+        }
+        div.about{
+            height: 33vh;
+        }
+    }
+    @media screen and (max-width: 950px){
+        div.about{
+            height: 32vh;
+        }
+        div.property{
+            height: 47vh;
+        }
+        div.header{
+            height: 39vh;
+        }
+    }
+    @media screen and (max-width: 850px){
+        div.about__imageBox{
+            margin-right: 15%;
+        }
+        p.property__smallBoxTxt{
+            font-size: 9px;
+        }
+    }
+    @media screen and (max-width: 730px){
+        button#btn1,button#btn2{
+            margin-right: 9% !important;
+            margin-left: 9% !important;
+            font-size: 16px;
+        }
+        div.property{
+            height: 65vh;
+        }
+        div.blueBox{
+            height: 53vh;
+        }
+        div.support__mainBox{
+            height: 10vh;
+        }
+        footer.footer{
+            height: 24vh;
+        }
+    }
+    @media screen and (max-width: 450px){
+        div.about__imageBox{
+            margin-right: 0;
+        }
+        div.about{
+            height: 80vh;
+        }
+        button#btn1,button#btn2{
+            height: 27%;
+            width: 44%;
+        }
+        div.blueBox{
+            height: 45vh;
+        }
+        div.support__mainBox{
+            height: 12vh;
+        }
+    }
+    @media screen and (max-width: 400px){
+        div.header{
+            height: 60vh;
+        }
+        button#btn1,button#btn2{
+            height: 21%;
+            width: 50%;
+            font-size: 18px;
+        }
+        div.about{
+            height: 70vh;
+        }
+        div.property{
+            height: 65vh;
+        }
+        div.property__rightBox{
+            height: 35%;
+        }
+        footer.footer{
+            height: 22vh;
+        }
+    }
+    @media screen and (max-width: 350px){
+        nav.navbar{
+            height: 8vh;
+        }
+        div.about{
+            height: 66vh;
+        }
+        div.property{
+            height: 60vh;
+        }
+        button#btn1,button#btn2{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 320px){
+        button#btn1,button#btn2{
+            font-size: 18px;
+            width: 65%;
+            height: 20%;
+        }
+        div.property__rightBox{
+            height: 38%;
+        }
+        div.blueBox{
+            height: 58vh;
+        }
+        footer.footer{
+            height: 20vh;
+        }
+    }
+    @media screen and (max-width: 300px){
+        a.about__image{
+            background-size: 85% 100%;
+        }
+        div.about{
+            height: 58vh;
+        }
+        div.blueBox{
+            height: 46vh;
+        }
+        div.property__leftBox{
+            height: 50%;
+        }
+    }
+}
+
+@media screen and (max-height: 850px) and (min-height: 700px){
+    @media screen and (max-width: 420px){
+        div.header{
+            height: 75vh;
+        }
+        div.about{
+            height: 90vh;
+        }
+        div.property{
+            height: 80vh;
+        }
+        div.blueBox{
+            height: 60vh;
+        }
+        div.drugStore{
+            height: 60vh;
+        }
+        div.support{
+            height: 20vh;
+        }
+        div.support__mainBox{
+            height: 16vh;
+        }
+    }
+}
+
+
+/*   pharmacy   */
+
+@media screen and (max-height: 1100px) and (min-height: 700px){
+    @media screen and (max-width: 1440px){
+        div.p-header{
+            margin-bottom: 0;
+            height: 60vh;
+        }
+        div.p-blueBand{
+            height: 17vh;
+            margin-bottom: 7%;
+        }
+        div.p-blueBand__mainBox{
+            align-items: center;
+        }
+        p.p-blueBand__firstTxt{
+            margin-top: 0;
+        }
+        div.p-servicesBottom{
+            height: 55vh;
+        }
+        button.p-servicesBottom__button{
+            margin-top: 10%;
+        }
+    }
+    @media screen and (max-width: 1260px){
+        div.p-header{
+            height: 55vh;
+        }
+        button.p-header__button{
+            border-radius: 5px;
+        }
+        div.p-servicesBottom{
+            height: 50vh;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        div.p-header{
+            height: 45vh;
+        }
+        div.p-blueBand{
+            height: 15vh;
+        }
+        div.p-servicesBottom{
+            height: 40vh;
+        }
+        div.support__innerBox{
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width: 850px){
+        div.p-header{
+            height: 40vh;
+        }
+        div.p-blueBand,div.support{
+            height: 13vh;
+        }
+        div.p-servicesBottom{
+            height: 35vh;
+        }
+    }
+    @media screen and (max-width: 730px){
+        div.p-header{
+            height: 50vh;
+        }
+        div.p-blueBand__mainBox{
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        p.p-blueBand__firstTxt{
+            font-size: 16px;
+        }
+        p.p-blueBand__secondTxt{
+            font-size: 25px;
+        }
+        p.p-header__thirdTxt{
+            font-size: 20px;
+            margin-right: 30px;
+        }
+        div.p-header__textBox{
+            margin-right: 30px;
+        }
+        p.p-header__textBoxTxt{
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        div.p-header__location{
+            height: 26px;
+        }
+        div.p-header__image{
+            margin: 5% 4% 0 0;
+        }
+        div.p-servicesBottom{
+            height: 80vh;
+        }
+        div.support{
+            height: 13vh;
+        }
+        p.support__secondTxt{
+            margin-bottom: 15px;
+        }
+    }
+    @media screen and (max-width: 650px){
+        div.p-blueBand__mainBox{
+            width: 85%;
+        }
+        p.p-blueBand__firstTxt{
+            font-size: 14px;
+        }
+        p.p-blueBand__secondTxt{
+            font-size: 22px;
+        }
+        div.p-servicesBottom{
+            height: 95vh;
+        }
+        div.p-servicesBottom__mainBox{
+            width: 65%;
+        }
+        p.p-servicesBottom__secondTxt{
+            font-size: 16px;
+        }
+        button.p-servicesBottom__button{
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+            margin: 10% 30% 0 0 !important;
+        }
+        span.p-header__span{
+            padding: 5px 7px;
+        }
+        input.p-header__input{
+            height: 22%;
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        p.support__firstTxt{
+            margin-top: 10px;
+        }
+        span.p-header__span{
+            padding: 3px 5px;
+            margin: 5% 0 0 5%;
+        }
+        p.p-header__thirdTxt{
+            margin-top: 10%;
+            margin-right: 22px;
+        }
+        div.p-header__image{
+            width: 18%;
+            margin-top: 9%;
+        }
+        div.p-header__textBox{
+            margin-right: 20px;
+            width: 60%;
+        }
+        p.p-header__textBoxTxt{
+            margin-top: 5px;
+        }
+        p.p-blueBand__firstTxt{
+            font-size: 12px;
+        }
+        p.p-blueBand__secondTxt{
+            font-size: 20px;
+        }
+        div.p-blueBand{
+            height: 11vh;
+        }
+        button.p-servicesBottom__button{
+            margin-right: 25% !important;
+        }
+        i#linkedIn{
+            margin-right: 30%;
+        }
+    }
+    @media screen and (max-width: 450px){
+        p.p-header__thirdTxt{
+            margin-top: 17%;
+            font-size: 16px;
+        }
+        div.p-header__textBox{
+            width: 65%;
+        }
+        div.p-header__image{
+            margin-top: 9% !important;
+            width: 20%;
+        }
+        div.p-blueBand__mainBox{
+            width: 90%;
+        }
+        p.p-blueBand__firstTxt{
+            font-size: 10px;
+        }
+        p.p-blueBand__secondTxt{
+            font-size: 18px;
+        }
+        div.p-blueBand{
+            height: 10vh;
+        }
+        div.p-header__mainBox{
+            width: 80%;
+            height: 65%;
+            margin-right: 10%;
+        }
+    }
+    @media screen and (max-width: 375px){
+        div.p-header__mainBox{
+            height: 57%;
+        }
+        div.p-servicesBottom__mainBox{
+            width: 70%;
+        }
+        button.p-servicesBottom__button{
+            margin-right: 21% !important;
+        }
+    }
+    @media screen and (max-width: 320px){
+        p.p-header__thirdTxt{
+            margin-top: 18% !important;
+            font-size: 13px;
+        }
+        div.p-header{
+            height: 45vh;
+        }
+        button.p-servicesBottom__button{
+            margin-right: 15% !important;
+        }
+        i#linkedIn{
+            margin-right: 24%;
+        }
+        button.p-header__button{
+            font-size: 5px !important;
+        }
+        p.p-blueBand__firstTxt{
+            font-size: 8px;
+        }
+    }
+    @media screen and (max-width: 300px){
+        button.p-header__button{
+            font-size: 6px !important;
+        }
+        div.p-header__mainBox{
+            height: 60%;
+        }
+        p.p-header__thirdTxt{
+            font-size: 10px;
+            margin-top: 20% !important;
+        }
+        div.p-header__image{
+            margin-top: 12% !important;
+        }
+        div.p-header__leftBox{
+            height: 43%;
+        }
+        div.p-header__rightBox{
+            height: 57%;
+        }
+    }
+}
+
+@media screen and (max-height: 850px) and (min-height: 700px) {
+    @media screen and (max-width: 420px) {
+        p.p-header__thirdTxt{
+            margin-top: 11%;
+        }
+        div.p-header__image{
+            margin-top: 8% !important;
+        }
+        div.p-servicesBottom{
+            height: 105vh;
+        }
+        div.support{
+            height: 19vh;
+        }
+    }
+}
+
+
+/*   FAQ   */
+
+@media screen and (max-height: 1100px) and (min-height: 700px) {
+    @media screen and (max-width: 1440px) {
+        div.f-blueLine{
+            height: 15vh;
+        }
+        div.f-main{
+            height: 60vh;
+        }
+    }
+    @media screen and (max-width: 1260px) {
+        div.f-main{
+            height: 55vh;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        div.f-blueLine{
+            height: 12vh;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        div.f-main{
+            height: 50vh;
+        }
+    }
+    @media screen and (max-width: 500px){
+        div.f-main{
+            height: 46vh;
+        }
+    }
+    @media screen and (max-width: 350px){
+        div.f-blueLine{
+            height: 10vh !important;
+            margin-top: 2%;
+        }
+        i#linkedIn{
+            margin-right: 27%;
+        }
+        footer.footer{
+            height: 20vh;
+        }
+        div.f-main{
+            height: 44vh;
+        }
+    }
+    @media screen and (max-width: 300px){
+        i#linkedIn{
+            margin-right: 23%;
+        }
+    }
+    @media screen and (max-width: 280px){
+        div.f-main__plusIcon,div.f-main__minusIcon{
+            margin-top: 2px;
+        }
+    }
+}
+@media screen and (max-height: 850px) and (min-height: 700px) {
+    @media screen and (max-width: 420px) {
+        div.f-main{
+            height: 60vh;
+        }
+        footer.footer{
+            height: 30vh;
+        }
+        i#linkedIn{
+            margin-right: 28%;
+        }
+    }
+}
+
+
+/*   contact   */
+
+@media screen and (max-height: 1100px) and (min-height: 700px){
+    @media screen and (max-width: 1440px){
+        div.f-blueLine{
+            height: 13vh;
+        }
+        div.c-main{
+            height: 82vh;
+        }
+        div.c-main__image{
+            width: 590px;
+            height: 640px;
+            margin-top: 19%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: local;
+        }
+        div.c-main__infoBox{
+            width: 520px;
+            height: 20%;
+            margin: -250px 35px 0 35px;
+        }
+    }
+    @media screen and (max-width: 1300px){
+        div.c-main__image{
+            width: 530px;
+            height: 630px;
+            background-position: center;
+        }
+        div.c-main__infoBox{
+            width: 500px;
+            height: 20%;
+            margin: -235px 15px 0 15px;
+        }
+    }
+    @media screen and (max-width: 1150px){
+        div.c-main__image{
+            width: 450px;
+        }
+        div.c-main__infoBox{
+            width: 420px;
+            height: 20%;
+            margin: -235px 15px 0 15px;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        div.c-main__image{
+            height: 610px;
+        }
+        form.c-main__form{
+            margin-right: 15%;
+        }
+        div.c-main{
+            height: 75vh;
+        }
+        div.c-main__rightBox{
+            width: 45%;
+        }
+        div.c-main__leftBox{
+            width: 55%;
+        }
+        form.c-main__form{
+            margin-top: 20%;
+        }
+        input.c-main__formButton{
+            width: 81%;
+        }
+    }
+    @media screen and (max-width: 860px){
+        div.c-main__image{
+            height: 595px;
+            width: 400px;
+        }
+        div.c-main__infoBox{
+            width: 370px;
+            height: 17%;
+            margin: -205px 15px 0 15px;
+        }
+        div.c-main{
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 780px){
+        div.c-main__image{
+            height: 580px;
+            width: 355px;
+            margin-top: 21%;
+        }
+        div.c-main__infoBox{
+            width: 325px;
+        }
+        div.c-main{
+            height: 72vh;
+        }
+        input.c-main__formButton{
+            width: 82.5%;
+        }
+    }
+    @media screen and (max-width: 730px){
+        div.c-main__rightBox,div.c-main__leftBox{
+            width: 100%;
+        }
+        div.c-main__image{
+            width: 80%;
+        }
+        div.c-main__infoBox{
+            width: 70%;
+            margin: -175px 15% 0 15%;
+        }
+        div.c-main{
+            height: 140vh;
+        }
+        form.c-main__form{
+            margin: 0 12% 0 0;
+        }
+        input.c-main__formButton{
+            width: 85.5%;
+            height: 6vh;
+        }
+    }
+    @media screen and (max-width: 450px){
+        div.c-main{
+            height: 125vh;
+        }
+        input.c-main__formButton{
+            width: 88.5%;
+        }
+    }
+    @media screen and (max-width: 350px){
+        div.c-main{
+            height: 90vh;
+        }
+        textarea.c-main__formInput{
+            height: 10vh !important;
+        }
+        form.c-main__form{
+            margin-right: 9%;
+        }
+        div.c-main__image{
+            width: 82%;
+            margin-right: 9%;
+        }
+        p.c-main__secondTxt{
+            font-size: 10px;
+        }
+        input.c-main__formButton{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-height: 850px) and (min-height: 700px) {
+    @media screen and (max-width: 420px) {
+        div.c-main__infoBox{
+            margin-top: -155px;
+        }
+        div.c-main{
+            height: 140vh;
+        }
+        input.c-main__formButton{
+            width: 90%;
+        }
+    }
+}
+
+
+/*     ipad pro     */
+
+@media screen and (max-height: 1450px) and (min-height: 1200px){
+    @media screen and (max-width: 1150px) and (min-width: 900px){
+
+/*    main    */
+
+        div.header,div.about{
+            height: 30vh;
+        }
+        div.drugStore,div.property{
+            height: 35vh;
+        }
+        div.blueBox{
+            height: 28vh;
+        }
+        div.support{
+            height: 15vh;
+        }
+        div.support__mainBox{
+            height: 5vh;
+        }
+        footer.footer{
+            height: 25vh;
+        }
+
+/*    contact    */
+
+        nav.navbar{
+            height: 10vh;
+        }
+        div.f-blueLine{
+            height: 12vh;
+        }
+        textarea.c-main__formInput{
+            height: 7vh !important;
+        }
+        div.c-main{
+            height: 45vh;
+        }
+        div.c-main__infoBox{
+            height: 13%;
+        }
+        div.c-main__image{
+            height: 425px;
+            background-position: center;
+            background-attachment: local;
+        }
+        input.c-main__formButton{
+            height: 4vh;
+        }
+
+/*    pharmacy    */
+
+        div.p-header{
+            height: 30vh;
+        }
+        div.p-blueBand{
+            height: 11vh;
+        }
+        div.p-servicesBottom{
+            height: 35vh;
+        }
+        button.p-servicesBottom__button{
+            margin-top: 10%;
+        }
+
+/*    FAQ    */
+
+        div.f-main{
+            height: 42vh;
+        }
+    }
+}

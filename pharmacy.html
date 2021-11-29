@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/773b01eed0.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <title>عضویت داروخانه ها</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logoBox">
+            <a href="index.html" class="navbar__logo"></a>
+            <p id="lText1">درمانیتو</p>
+            <p id="lText2">همراه شما در درمان</p>
+        </div>
+        <ul class="navbar__list" id="navResponsive">
+            <li class="navbar__item"><a href="index.html">صفحه اصلی</a></li>
+            <li class="navbar__item"><a href="#">درباره ما</a></li>
+            <li class="navbar__item"><a href="contact.html">تماس با ما</a></li>
+            <li class="navbar__item"><a href="pharmacy.html">عضویت داروخانه ها</a></li>
+            <li class="navbar__item" id="newLi0" ><a href="FAQ.html">سوالات متداول</a></li>
+            <li class="navbar__item" id="newLi1"><a href="#">قوانین و شرایط</a></li>
+            <li class="navbar__item" id="btnBox"><button id="btn0">دانلود درمانیتو</button></li>
+        </ul>
+        <button class="navbar__burger" id="burger" onclick="nav()"></button>
+    </nav>
+    <div class="p-header">
+        <div class="p-header__rightBox">
+            <p class="p-header__firstTxt">شما هم در سلامت و بهبود مردم کشورمون موثر باشید</p>
+            <p class="p-header__secondTxt">با ثبت نام به عنوان داروخانه یا فروشگاه داروخانه شما هم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارائه بدین و روزانه درآمد سفارش های خودتون رو تسویه کنید</p>
+            <input class="p-header__input blueBox__input" type="number" placeholder="َشماره همراه خود را وارد کنید" style="background-color: #f9f9f9">
+            <button class="p-header__button btn" id="drugBut">ثبت نام سریع</button>
+        </div>
+        <div class="p-header__leftBox">
+            <div class="p-header__mainBox p-header__mainBox--active">
+                <div class="p-header__image"></div>
+                <p class="p-header__thirdTxt">نام داروخانه شما</p>
+                <span class="p-header__span">شبانه روزی</span>
+                <div class="p-header__textBox">
+                    <div class="p-header__location p-header__location--active"></div>
+                    <p class="p-header__textBoxTxt">درمانیتو , سرویس داروخانه , داروخانه شما</p>
+                </div>
+            </div>
+            <div class="p-header__mainBox p-header__mainBox--style" style="opacity: 80%;margin-right: 15%">
+                <div class="p-header__image"></div>
+                <p class="p-header__thirdTxt p-header__thirdTxt--active">نام داروخانه شما</p>
+                <div class="p-header__textBox">
+                    <div class="p-header__location"></div>
+                    <p class="p-header__textBoxTxt p-header__textBoxTxt--active">درمانیتو , سرویس داروخانه , داروخانه شما</p>
+                </div>
+            </div>
+            <div class="p-header__mainBox p-header__mainBox--style p-header__mainBox--last" style="opacity: 50%;margin-right: 35%">
+                <div class="p-header__image"></div>
+                <p class="p-header__thirdTxt p-header__thirdTxt--active">نام داروخانه شما</p>
+                <span class="p-header__span p-header__span--active">شبانه روزی</span>
+                <div class="p-header__textBox">
+                    <div class="p-header__location"></div>
+                    <p class="p-header__textBoxTxt p-header__textBoxTxt--active">درمانیتو , سرویس داروخانه , داروخانه شما</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-blueBand">
+        <div class="p-blueBand__mainBox">
+            <div class="p-blueBand__innerBox">
+                <p class="p-blueBand__firstTxt">تعداد کاربران درمانیتو</p>
+                <p class="p-blueBand__secondTxt">120,000+</p>
+            </div>
+            <div class="p-blueBand__innerBox">
+                <p class="p-blueBand__firstTxt">تعداد داروخانه و مراکز</p>
+                <p class="p-blueBand__secondTxt">120,000+</p>
+            </div>
+            <div class="p-blueBand__innerBox">
+                <p class="p-blueBand__firstTxt">تعداد مشتریان رضایتمند</p>
+                <p class="p-blueBand__secondTxt">120,000+</p>
+            </div>
+        </div>
+    </div>
+    <div class="p-servicesTop" style="margin-right: 12%">
+        <div class="vl vl-p0" style="height: 30px;"></div>
+        <p class="p-servicesTop__firstTxt">در درمانیتو چه خدماتی ارائه خواهید داد؟</p>
+        <p class="p-servicesTop__secondTxt">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</p>
+    </div>
+    <div class="p-servicesBottom">
+        <div class="p-servicesBottom__rightBox">
+            <div class="p-servicesBottom__mainBox">
+                <div class="p-servicesBottom__imgBox">
+                    <div class="p-servicesBottom__imgRight"></div>
+                </div>
+                <p class="p-servicesBottom__firstTxt">داروخانه</p>
+                <p class="p-servicesBottom__secondTxt">مایل هستم فقط بعنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم</p>
+                <button class="p-servicesBottom__button">ثبت نام</button>
+            </div>
+        </div>
+        <div class="p-servicesBottom__leftBox">
+            <div class="p-servicesBottom__mainBox" style="margin-right: 15%">
+                <div class="p-servicesBottom__imgBox">
+                    <div class="p-servicesBottom__imgLeft"></div>
+                </div>
+                <p class="p-servicesBottom__firstTxt">فروشگاه آرایشی و بهداشتی</p>
+                <p class="p-servicesBottom__secondTxt">مایل هستم فقط بعنوان داروخانه فعالیت کنم و در بخش صرفا سفارش دارو با عکس نسخه به بیماران کمک رسانی کنم</p>
+                <button class="p-servicesBottom__button">ثبت نام</button>
+            </div>
+        </div>
+    </div>
+    <div class="support">
+        <div class="support__mainBox">
+            <p class="support__firstTxt">پشتیبانی درمانیتو</p>
+            <p class="support__secondTxt">پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+            <div class="support__innerBox"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__mainBox" id="lastResponsive">
+            <div class="footer__secondBox">
+                <a href="index.html" class="footer__last navbar__logo" style="float:right;margin-left: 5px;margin-top: 10px"></a>
+                <div class="footer__logoTxt">
+                    <p id="lastText1" style="margin-right: 5px">درمانیتو</p>
+                    <p id="lastText2">همراه شما در درمان</p>
+                </div>
+                <br/><br/><br class="footer__br"/>
+                <p class="footer__infoTxt">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p class="footer__mainTxtType">تمامی حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
+                <i class="fab fa-linkedin-in icon" id="linkedIn"></i>
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-instagram icon"></i>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove1">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <div class="footer__rightBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">خدمات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li">داروخانه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">فروشگاه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">ویزیت آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">پرونده پزشکی</li>
+                    </ul>
+                </div>
+                <div class="footer__leftBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">صفحات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="contact.html" class="link">تماس با ما</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">درباره ما</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="FAQ.html" class="link">سوالات متداول</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">قوانین و شرایط</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove0">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <p class="footer__infoTxt removable">دانلود درمانیتو</p>
+                <button class="footer__button btn0" id="bazar0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+                <button class="footer__button btn0" id="sib0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>پرسش های متداول</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/773b01eed0.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar__faq">
+        <div class="navbar__logoBox">
+            <a href="index.html" class="navbar__logo"></a>
+            <p id="lText1">درمانیتو</p>
+            <p id="lText2">همراه شما در درمان</p>
+        </div>
+        <ul class="navbar__list" id="navResponsive">
+            <li class="navbar__item"><a href="index.html">صفحه اصلی</a></li>
+            <li class="navbar__item"><a href="#">درباره ما</a></li>
+            <li class="navbar__item"><a href="contact.html">تماس با ما</a></li>
+            <li class="navbar__item"><a href="pharmacy.html">عضویت داروخانه ها</a></li>
+            <li class="navbar__item" id="newLi0" ><a href="FAQ.html">سوالات متداول</a></li>
+            <li class="navbar__item" id="newLi1"><a href="#">قوانین و شرایط</a></li>
+            <li class="navbar__item" id="btnBox"><button id="btn0">دانلود درمانیتو</button></li>
+        </ul>
+        <button class="navbar__burger" id="burger" onclick="nav()"></button>
+    </nav>
+    <div class="f-blueLine f-blueLine--active">
+        <p class="f-blueLine__text">سوالات متداول</p>
+    </div>
+    <div class="f-main">
+        <div class="f-main__txtBox">
+            <div class="vl faqGreenLine0" style="height: 30px"></div>
+            <p class="f-main__firstTxt">سوال شما درباره کدام سرویس است؟</p>
+        </div>
+        <div class="f-main__innerBox">
+            <div class="property__smallBox property__smallBox--new f-main__box">
+                <a class="property__smallBoxImgFirst f-main--same"></a>
+                <p class="property__smallBoxTxt f-main__text" style="color: #528CFF">داروخانه</p>
+            </div>
+            <div class="property__smallBox property__smallBox--new f-main__box" style="opacity: 30%">
+                <a class="property__smallBoxImgSecond f-main--same"></a>
+                <p class="property__smallBoxTxt f-main__text" style="color: #939393">فروشگاه</p>
+            </div>
+            <div class="property__smallBox property__smallBox--new f-main__box" id="fbox0" style="opacity: 30%">
+                <span class="f-main__span">به زودی</span>
+                <a class="property__smallBoxImgThird f-main--same"></a>
+                <p class="property__smallBoxTxt f-main__text" style="color: #939393">ویزیت آنلاین</p>
+            </div>
+            <div class="property__smallBox property__smallBox--new f-main__box" id="fbox1" style="opacity: 30%">
+                <span class="f-main__span">به زودی</span>
+                <a class="property__smallBoxImgFourth f-main--same"></a>
+                <p class="property__smallBoxTxt f-main__text" style="color: #939393">نوبت دهی آنلاین</p>
+            </div>
+        </div>
+        <div class="f-main__questionBox">
+            <div class="f-main__plusIcon"></div>
+            <p class="f-main__questionText">هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟</p>
+        </div>
+        <hr class="f-main__line">
+        <div class="f-main__questionBox" style="margin-top: 2%">
+            <div class="f-main__plusIcon"></div>
+            <p class="f-main__questionText">هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟</p>
+        </div>
+        <hr class="f-main__line">
+        <div class="f-main__questionBox" style="margin-top: 2%">
+            <div class="f-main__minusIcon"></div>
+            <p class="f-main__questionText">درمانیتو فقط در تهران و کرج فعال است؟</p>
+            <div class="vl faqGreenLine" style="height: 27px;margin: 0 5%"></div>
+            <p class="f-main__questionTextSecond" id="f-txt">خیر ما هم اکنون در تهران در حال فعالیت هستیم</p>
+        </div>
+        <hr class="f-main__line f-main__line--active">
+        <div class="f-main__questionBox" id="f-Q" style="margin-top: 2%">
+            <div class="f-main__plusIcon"></div>
+            <p class="f-main__questionText">هزینه ای درمانیتو برای پیدا کردن دارو دریافت میکنه؟</p>
+        </div>
+        <hr class="f-main__line f-main__line--active">
+    </div>
+    <div class="support">
+        <div class="support__mainBox">
+            <p class="support__firstTxt">پشتیبانی درمانیتو</p>
+            <p class="support__secondTxt">پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+            <div class="support__innerBox"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__mainBox" id="lastResponsive">
+            <div class="footer__secondBox">
+                <a href="index.html" class="footer__last navbar__logo" style="float:right;margin-left: 5px;margin-top: 10px"></a>
+                <div class="footer__logoTxt">
+                    <p id="lastText1" style="margin-right: 5px">درمانیتو</p>
+                    <p id="lastText2">همراه شما در درمان</p>
+                </div>
+                <br/><br/><br class="footer__br"/>
+                <p class="footer__infoTxt">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p class="footer__mainTxtType">تمامی حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
+                <i class="fab fa-linkedin-in icon" id="linkedIn"></i>
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-instagram icon"></i>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove1">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <div class="footer__rightBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">خدمات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li">داروخانه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">فروشگاه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">ویزیت آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">پرونده پزشکی</li>
+                    </ul>
+                </div>
+                <div class="footer__leftBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">صفحات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="contact.html" class="link">تماس با ما</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">درباره ما</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="FAQ.html" class="link">سوالات متداول</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">قوانین و شرایط</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove0">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <p class="footer__infoTxt removable">دانلود درمانیتو</p>
+                <button class="footer__button btn0" id="bazar0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+                <button class="footer__button btn0" id="sib0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

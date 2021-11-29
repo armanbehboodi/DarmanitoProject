@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/773b01eed0.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <title>تماس باما</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logoBox">
+            <a href="index.html" class="navbar__logo"></a>
+            <p id="lText1">درمانیتو</p>
+            <p id="lText2">همراه شما در درمان</p>
+        </div>
+        <ul class="navbar__list" id="navResponsive">
+            <li class="navbar__item"><a href="index.html">صفحه اصلی</a></li>
+            <li class="navbar__item"><a href="#">درباره ما</a></li>
+            <li class="navbar__item"><a href="contact.html">تماس با ما</a></li>
+            <li class="navbar__item"><a href="pharmacy.html">عضویت داروخانه ها</a></li>
+            <li class="navbar__item" id="newLi0" ><a href="FAQ.html">سوالات متداول</a></li>
+            <li class="navbar__item" id="newLi1"><a href="#">قوانین و شرایط</a></li>
+            <li class="navbar__item" id="btnBox"><button id="btn0">دانلود درمانیتو</button></li>
+        </ul>
+        <button class="navbar__burger" id="burger" onclick="nav()"></button>
+    </nav>
+    <div class="f-blueLine">
+        <p class="f-blueLine__text">تماس باما</p>
+    </div>
+    <div class="c-main">
+        <div class="c-main__rightBox">
+            <form method="get" class="c-main__form">
+                <p class="c-main__formTxt">نام و نام خانوادگی</p>
+                <input type="text" class="c-main__formInput" name="fullName" placeholder="نام و نام خانوادگی خود را وارد کنید">
+                <p class="c-main__formTxt">ایمیل یا شماره همراه</p>
+                <input type="text" class="c-main__formInput" name="fullName" placeholder="ایمیل یا شماره همراه خود را وارد کنید">
+                <p class="c-main__formTxt">پیام شما</p>
+                <textarea name="comment" placeholder="پیام خود را بنویسید" class="c-main__formInput" style="height: 24vh"></textarea>
+                <input type="submit" value="ارسال پیام" class="c-main__formButton">
+            </form>
+        </div>
+        <div class="c-main__leftBox">
+            <div class="c-main__image"></div>
+            <div class="c-main__infoBox">
+                <div class="c-main__infoRightBox">
+                    <div class="c-main__txtBox" id="cTextRight">
+                        <p class="c-main__firstTxt">ایمیل</p>
+                        <p class="c-main__secondTxt">info@nahiraTech.com</p>
+                    </div>
+                    <div class="c-main__txtBox" id="cTextLeft">
+                        <p class="c-main__firstTxt" style="margin-top: 24px">شماره ثابت</p>
+                        <p class="c-main__secondTxt">021-44219671</p>
+                    </div>
+                </div>
+                <div class="c-main__infoLeftBox">
+                    <p class="c-main__firstTxt" id="address">آدرس</p>
+                    <p class="c-main__thirdTxt">تهران طرشت خیابان شهید چوب تراش خیابان شهید حسین مردی بن بست پنجم پلاک 15 واحد 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="support">
+        <div class="support__mainBox">
+            <p class="support__firstTxt">پشتیبانی درمانیتو</p>
+            <p class="support__secondTxt">پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
+            <div class="support__innerBox"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__mainBox" id="lastResponsive">
+            <div class="footer__secondBox">
+                <a href="index.html" class="footer__last navbar__logo" style="float:right;margin-left: 5px;margin-top: 10px"></a>
+                <div class="footer__logoTxt">
+                    <p id="lastText1" style="margin-right: 5px">درمانیتو</p>
+                    <p id="lastText2">همراه شما در درمان</p>
+                </div>
+                <br/><br/><br class="footer__br"/>
+                <p class="footer__infoTxt">سوپر اپلیکیشن حوزه درمان و سلامت</p>
+                <p class="footer__mainTxtType">تمامی حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است</p>
+                <i class="fab fa-linkedin-in icon" id="linkedIn"></i>
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-instagram icon"></i>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove1">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <div class="footer__rightBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">خدمات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li">داروخانه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">فروشگاه آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">ویزیت آنلاین</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">پرونده پزشکی</li>
+                    </ul>
+                </div>
+                <div class="footer__leftBox">
+                    <p class="footer__infoTxt footer__infoTxt--lastTwo" style="margin-bottom: 25px">صفحات درمانیتو</p>
+                    <ul style="padding-right: 15px">
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="contact.html" class="link">تماس با ما</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">درباره ما</li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li"><a href="FAQ.html" class="link">سوالات متداول</a></li>
+                        <li class="footer__mainTxtType footer__mainTxtType--li">قوانین و شرایط</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__mainBox" id="remove0">
+            <div class="footer__secondBox" style="width: 85%;margin-right: 15%">
+                <p class="footer__infoTxt removable">دانلود درمانیتو</p>
+                <button class="footer__button btn0" id="bazar0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+                <button class="footer__button btn0" id="sib0" style="margin:2% 0 0 2%;width: 35%;height: 16%"></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
